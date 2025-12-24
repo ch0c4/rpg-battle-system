@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Action" load_steps=5 format=3 uid="uid://crevvks6fj5od"]
+
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="1_4rkb2"]
+[ext_resource type="PackedScene" uid="uid://c8shwpbtndt4l" path="res://Entities/Effect/Fireball/fireball.tscn" id="1_40ccg"]
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="2_40ccg"]
+[ext_resource type="Resource" uid="uid://5gk6g56g17y2" path="res://Entities/Monsters/Mimic/Resources/mimic_burn_effect.tres" id="3_ul3qi"]
+
+[resource]
+script = ExtResource("2_40ccg")
+animation = ExtResource("1_40ccg")
+name = "Firewall"
+anim_name = &"firewall"
+damage_percent = 80
+target = 2
+effect = Array[ExtResource("1_4rkb2")]([ExtResource("3_ul3qi")])
+metadata/_custom_type_script = "uid://co57ijainkf2b"

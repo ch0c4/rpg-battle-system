@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Effect" load_steps=4 format=3 uid="uid://bmet84phmn6ja"]
+
+[ext_resource type="Texture2D" uid="uid://ced6sch0ojk4" path="res://Resources/Effects/Assets/poison_effect_icon.tres" id="1_1toxi"]
+[ext_resource type="PackedScene" uid="uid://novxnddtfmby" path="res://Entities/Effect/Poison/poison_effect.tscn" id="1_b2p37"]
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="1_ke4kv"]
+
+[resource]
+script = ExtResource("1_ke4kv")
+icon = ExtResource("1_1toxi")
+name = "Poison"
+amount = 3
+turn_duration = 5
+effect_type = 1
+status = 2
+animation = ExtResource("1_b2p37")
+metadata/_custom_type_script = "uid://d3dv37vytrihm"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Effect" load_steps=4 format=3 uid="uid://0tn1w35mho3g"]
+
+[ext_resource type="PackedScene" uid="uid://vyqg2m0rjhxi" path="res://Entities/Effect/Lightning/lightning_effect.tscn" id="1_3b37g"]
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="1_w3g1e"]
+[ext_resource type="Texture2D" uid="uid://duo18gphrc1i5" path="res://Resources/Effects/Assets/stun_effect_icon.tres" id="2_jge27"]
+
+[resource]
+script = ExtResource("1_w3g1e")
+icon = ExtResource("2_jge27")
+name = "Stun"
+turn_duration = 2
+effect_type = 1
+status = 4
+animation = ExtResource("1_3b37g")
+metadata/_custom_type_script = "uid://d3dv37vytrihm"

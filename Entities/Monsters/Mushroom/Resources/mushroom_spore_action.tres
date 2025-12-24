@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Action" load_steps=5 format=3 uid="uid://bdrp7nm1kg11a"]
+
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="1_kpy45"]
+[ext_resource type="PackedScene" uid="uid://novxnddtfmby" path="res://Entities/Effect/Poison/poison_effect.tscn" id="1_uiswu"]
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="2_uiswu"]
+[ext_resource type="Resource" uid="uid://bmet84phmn6ja" path="res://Entities/Monsters/Mushroom/Resources/mushroom_poison_effect.tres" id="3_2xdh3"]
+
+[resource]
+script = ExtResource("2_uiswu")
+animation = ExtResource("1_uiswu")
+name = "Spore"
+anim_name = &"spore"
+damage_percent = 20
+target = 2
+effect = Array[ExtResource("1_kpy45")]([ExtResource("3_2xdh3")])
+metadata/_custom_type_script = "uid://co57ijainkf2b"

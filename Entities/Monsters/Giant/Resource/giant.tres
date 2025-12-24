@@ -1,10 +1,9 @@
-[gd_resource type="Resource" script_class="Fighter" load_steps=8 format=3 uid="uid://cpixm0qymoaj8"]
+[gd_resource type="Resource" script_class="Fighter" load_steps=7 format=3 uid="uid://cpixm0qymoaj8"]
 
 [ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="1_fm6ci"]
 [ext_resource type="Script" uid="uid://c41kfduj2siwv" path="res://Scripts/Resources/fighter.gd" id="2_8n88i"]
-[ext_resource type="Resource" uid="uid://brecicc0q43n7" path="res://Resources/Actions/enemy_attack_action.tres" id="2_q1uki"]
-[ext_resource type="Resource" uid="uid://c8abhouvadpgt" path="res://Resources/Actions/enemy_guard_action.tres" id="3_w31gf"]
-[ext_resource type="Resource" uid="uid://b633yv4jy0eeo" path="res://Resources/Actions/enemy_lightning_action.tres" id="4_m77y5"]
+[ext_resource type="Resource" uid="uid://clg806iqjtok3" path="res://Entities/Monsters/Giant/Resource/giant_attack_action.tres" id="2_55f1j"]
+[ext_resource type="Resource" uid="uid://cegwks1i7gobs" path="res://Entities/Monsters/Giant/Resource/giant_lightning_action.tres" id="3_68svi"]
 [ext_resource type="Texture2D" uid="uid://bj8hm8uymnya6" path="res://Entities/Monsters/Giant/Assets/giant-spritesheet.png" id="5_rwov1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_awmrr"]
@@ -21,5 +20,5 @@ speed = 7
 protection = 9
 max_hp = 520
 max_mana = 120
-actions = Array[ExtResource("1_fm6ci")]([ExtResource("2_q1uki"), ExtResource("3_w31gf"), ExtResource("4_m77y5")])
+actions = Array[ExtResource("1_fm6ci")]([ExtResource("2_55f1j"), ExtResource("3_68svi")])
 metadata/_custom_type_script = "uid://c41kfduj2siwv"

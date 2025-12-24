@@ -1,10 +1,9 @@
-[gd_resource type="Resource" script_class="Fighter" load_steps=8 format=3 uid="uid://bpts1ekoywn57"]
+[gd_resource type="Resource" script_class="Fighter" load_steps=7 format=3 uid="uid://bpts1ekoywn57"]
 
 [ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="1_74npb"]
 [ext_resource type="Script" uid="uid://c41kfduj2siwv" path="res://Scripts/Resources/fighter.gd" id="2_4lnpt"]
-[ext_resource type="Resource" uid="uid://brecicc0q43n7" path="res://Resources/Actions/enemy_attack_action.tres" id="2_k2ejs"]
-[ext_resource type="Resource" uid="uid://dhmdcjtvrcb5k" path="res://Resources/Actions/enemy_fireball_action.tres" id="3_or0wm"]
-[ext_resource type="Resource" uid="uid://ctwban2gnk6a8" path="res://Resources/Actions/enemy_rock_fall_action.tres" id="4_8cxum"]
+[ext_resource type="Resource" uid="uid://c7rxc781ge47m" path="res://Entities/Monsters/Dragon/Resources/dragon_punch_action.tres" id="2_e28a4"]
+[ext_resource type="Resource" uid="uid://w36bukn4thbt" path="res://Entities/Monsters/Dragon/Resources/dragon_fireball_action.tres" id="3_bvo0u"]
 [ext_resource type="Texture2D" uid="uid://cgadiak10eold" path="res://Entities/Monsters/Dragon/Assets/dragon-spritesheet.png" id="5_mfx7b"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_53ai2"]
@@ -21,5 +20,5 @@ speed = 9
 protection = 8
 max_hp = 450
 max_mana = 200
-actions = Array[ExtResource("1_74npb")]([ExtResource("2_k2ejs"), ExtResource("3_or0wm"), ExtResource("4_8cxum")])
+actions = Array[ExtResource("1_74npb")]([ExtResource("2_e28a4"), ExtResource("3_bvo0u")])
 metadata/_custom_type_script = "uid://c41kfduj2siwv"

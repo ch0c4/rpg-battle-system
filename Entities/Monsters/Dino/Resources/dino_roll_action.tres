@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Action" load_steps=4 format=3 uid="uid://c227m0mq0lms0"]
+
+[ext_resource type="PackedScene" uid="uid://675nn1oac45b" path="res://Entities/Effect/Attack/attack_effect.tscn" id="1_e772c"]
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="1_vkuxy"]
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="2_e772c"]
+
+[resource]
+script = ExtResource("2_e772c")
+animation = ExtResource("1_e772c")
+name = "Roll"
+anim_name = &"roll"
+damage_percent = 100
+metadata/_custom_type_script = "uid://co57ijainkf2b"

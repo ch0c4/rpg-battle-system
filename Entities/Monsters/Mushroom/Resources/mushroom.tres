@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="1_rw2bj"]
 [ext_resource type="Script" uid="uid://c41kfduj2siwv" path="res://Scripts/Resources/fighter.gd" id="2_2gntd"]
-[ext_resource type="Resource" uid="uid://brecicc0q43n7" path="res://Resources/Actions/enemy_attack_action.tres" id="2_jtv5q"]
-[ext_resource type="Resource" uid="uid://dnakmx1udpxv" path="res://Resources/Actions/enemy_poison_action.tres" id="3_hyjho"]
+[ext_resource type="Resource" uid="uid://cn1rxhxd04ojp" path="res://Entities/Monsters/Mushroom/Resources/mushroom_attack_action.tres" id="2_dlopl"]
+[ext_resource type="Resource" uid="uid://bdrp7nm1kg11a" path="res://Entities/Monsters/Mushroom/Resources/mushroom_spore_action.tres" id="3_see0h"]
 [ext_resource type="Texture2D" uid="uid://d1sj6gak3ukag" path="res://Entities/Monsters/Mushroom/Assets/mushroom-spritesheet.png" id="4_wkp1q"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0iaxc"]
@@ -20,5 +20,5 @@ speed = 8
 protection = 2
 max_hp = 75
 max_mana = 40
-actions = Array[ExtResource("1_rw2bj")]([ExtResource("2_jtv5q"), ExtResource("3_hyjho")])
+actions = Array[ExtResource("1_rw2bj")]([ExtResource("2_dlopl"), ExtResource("3_see0h")])
 metadata/_custom_type_script = "uid://c41kfduj2siwv"

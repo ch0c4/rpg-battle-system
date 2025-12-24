@@ -1,10 +1,105 @@
-[gd_scene load_steps=4 format=3 uid="uid://e7vjxldfncxo"]
+[gd_scene load_steps=11 format=3 uid="uid://e7vjxldfncxo"]
 
 [ext_resource type="PackedScene" uid="uid://ddj1utq7c4jr5" path="res://Entities/Monsters/monsters.tscn" id="1_jafsk"]
+[ext_resource type="Resource" uid="uid://dsquy7isrfc5j" path="res://Entities/Monsters/Ghost/Resources/ghost.tres" id="2_ejp8y"]
 [ext_resource type="Texture2D" uid="uid://eau0yp0molit" path="res://Entities/Monsters/Assets/shadow.png" id="2_x4lsy"]
 [ext_resource type="Texture2D" uid="uid://dvsr0l0qa13b5" path="res://Entities/Monsters/Ghost/Assets/ghost-spritesheet.png" id="3_ejp8y"]
 
+[sub_resource type="Animation" id="Animation_x4lsy"]
+resource_name = "idle"
+length = 0.60001004
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5]
+}
+
+[sub_resource type="Animation" id="Animation_ejp8y"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_ig2r5"]
+resource_name = "attack"
+length = 0.60001004
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [6, 7, 8, 9, 10, 11]
+}
+
+[sub_resource type="Animation" id="Animation_u4c6r"]
+resource_name = "stun"
+length = 1.40001
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.90000004, 1, 1.1, 1.2, 1.3000001),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+}
+
+[sub_resource type="Animation" id="Animation_yprgk"]
+resource_name = "hit"
+length = 0.40001002
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [26, 27, 28, 29]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ig2r5"]
+_data = {
+&"RESET": SubResource("Animation_ejp8y"),
+&"attack": SubResource("Animation_ig2r5"),
+&"hit": SubResource("Animation_yprgk"),
+&"idle": SubResource("Animation_x4lsy"),
+&"stun": SubResource("Animation_u4c6r")
+}
+
 [node name="Ghost" instance=ExtResource("1_jafsk")]
+info = ExtResource("2_ejp8y")
 
 [node name="Shadow" parent="." index="0"]
 scale = Vector2(4.1875, 1.4375)
@@ -15,3 +110,9 @@ position = Vector2(3, -56)
 texture = ExtResource("3_ejp8y")
 hframes = 6
 vframes = 5
+
+[node name="AnimationPlayer" parent="." index="2"]
+libraries = {
+&"": SubResource("AnimationLibrary_ig2r5")
+}
+autoplay = "idle"

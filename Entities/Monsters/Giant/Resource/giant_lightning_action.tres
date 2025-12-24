@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Action" load_steps=5 format=3 uid="uid://cegwks1i7gobs"]
+
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="1_klpxv"]
+[ext_resource type="PackedScene" uid="uid://vyqg2m0rjhxi" path="res://Entities/Effect/Lightning/lightning_effect.tscn" id="1_q25pt"]
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="2_q25pt"]
+[ext_resource type="Resource" uid="uid://0tn1w35mho3g" path="res://Entities/Monsters/Giant/Resource/giant_stun_effect.tres" id="3_he6md"]
+
+[resource]
+script = ExtResource("2_q25pt")
+animation = ExtResource("1_q25pt")
+name = "Lightning"
+anim_name = &"lightning"
+damage_percent = 90
+target = 2
+effect = Array[ExtResource("1_klpxv")]([ExtResource("3_he6md")])
+metadata/_custom_type_script = "uid://co57ijainkf2b"

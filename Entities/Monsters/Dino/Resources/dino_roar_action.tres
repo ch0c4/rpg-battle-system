@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Action" load_steps=5 format=3 uid="uid://c4pr0gyf82w57"]
+
+[ext_resource type="PackedScene" uid="uid://bf2wjrkkoiq3c" path="res://Entities/Effect/Wind/wind_effect.tscn" id="1_f2oej"]
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="1_sl8vd"]
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="2_f2oej"]
+[ext_resource type="Resource" uid="uid://c6vkblfqb3fq6" path="res://Entities/Monsters/Dino/Resources/dino_roar_effect.tres" id="3_7x3t6"]
+
+[resource]
+script = ExtResource("2_f2oej")
+animation = ExtResource("1_f2oej")
+name = "Roar"
+anim_name = &"roar"
+effect = Array[ExtResource("1_sl8vd")]([ExtResource("3_7x3t6")])
+metadata/_custom_type_script = "uid://co57ijainkf2b"

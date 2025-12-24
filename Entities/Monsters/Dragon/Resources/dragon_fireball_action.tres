@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Action" load_steps=5 format=3 uid="uid://w36bukn4thbt"]
+
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="1_pe732"]
+[ext_resource type="PackedScene" uid="uid://c8shwpbtndt4l" path="res://Entities/Effect/Fireball/fireball.tscn" id="1_v4fjy"]
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="2_v4fjy"]
+[ext_resource type="Resource" uid="uid://dax1pqn38gwkw" path="res://Entities/Monsters/Dragon/Resources/dragon_burn_effect.tres" id="3_wykvj"]
+
+[resource]
+script = ExtResource("2_v4fjy")
+animation = ExtResource("1_v4fjy")
+name = "Fireball"
+anim_name = &"fireball"
+damage_percent = 110
+effect = Array[ExtResource("1_pe732")]([ExtResource("3_wykvj")])
+metadata/_custom_type_script = "uid://co57ijainkf2b"

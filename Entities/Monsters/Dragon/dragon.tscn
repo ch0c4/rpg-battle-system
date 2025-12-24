@@ -1,10 +1,87 @@
-[gd_scene load_steps=4 format=3 uid="uid://b2qotfy3abnp7"]
+[gd_scene load_steps=10 format=3 uid="uid://b2qotfy3abnp7"]
 
 [ext_resource type="PackedScene" uid="uid://ddj1utq7c4jr5" path="res://Entities/Monsters/monsters.tscn" id="1_121uc"]
 [ext_resource type="Texture2D" uid="uid://eau0yp0molit" path="res://Entities/Monsters/Assets/shadow.png" id="2_6wkpt"]
+[ext_resource type="Resource" uid="uid://bpts1ekoywn57" path="res://Entities/Monsters/Dragon/Resources/dragon.tres" id="2_inqe4"]
 [ext_resource type="Texture2D" uid="uid://cgadiak10eold" path="res://Entities/Monsters/Dragon/Assets/dragon-spritesheet.png" id="3_4uyav"]
 
+[sub_resource type="Animation" id="Animation_4uyav"]
+resource_name = "idle"
+length = 0.60001004
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5]
+}
+
+[sub_resource type="Animation" id="Animation_inqe4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_lyiq4"]
+resource_name = "punch"
+length = 0.60001004
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [6, 7, 8, 9, 10, 11]
+}
+
+[sub_resource type="Animation" id="Animation_sasj4"]
+resource_name = "fireball"
+length = 0.80001
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [12, 13, 14, 15, 16, 17, 18, 19]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lyiq4"]
+_data = {
+&"RESET": SubResource("Animation_inqe4"),
+&"fireball": SubResource("Animation_sasj4"),
+&"idle": SubResource("Animation_4uyav"),
+&"punch": SubResource("Animation_lyiq4")
+}
+
 [node name="Dragon" instance=ExtResource("1_121uc")]
+info = ExtResource("2_inqe4")
 
 [node name="Shadow" parent="." index="0"]
 scale = Vector2(11.5, 3.625)
@@ -15,3 +92,9 @@ position = Vector2(12, -91)
 texture = ExtResource("3_4uyav")
 hframes = 5
 vframes = 5
+
+[node name="AnimationPlayer" parent="." index="2"]
+libraries = {
+&"": SubResource("AnimationLibrary_lyiq4")
+}
+autoplay = "idle"

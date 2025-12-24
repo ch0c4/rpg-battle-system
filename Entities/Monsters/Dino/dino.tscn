@@ -1,10 +1,105 @@
-[gd_scene load_steps=4 format=3 uid="uid://b0jiyeqxj5m6h"]
+[gd_scene load_steps=11 format=3 uid="uid://b0jiyeqxj5m6h"]
 
 [ext_resource type="PackedScene" uid="uid://ddj1utq7c4jr5" path="res://Entities/Monsters/monsters.tscn" id="1_4bgn6"]
+[ext_resource type="Resource" uid="uid://di4uecex1gy3w" path="res://Entities/Monsters/Dino/Resources/dino.tres" id="2_mdjut"]
 [ext_resource type="Texture2D" uid="uid://eau0yp0molit" path="res://Entities/Monsters/Assets/shadow.png" id="2_v5c03"]
 [ext_resource type="Texture2D" uid="uid://2njruhgids5o" path="res://Entities/Monsters/Dino/Assets/dino-spritesheet.png" id="3_xurc8"]
 
+[sub_resource type="Animation" id="Animation_mdjut"]
+resource_name = "idle"
+length = 0.6666834
+loop_mode = 1
+step = 0.16666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_h4w03"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_k06qg"]
+resource_name = "roll"
+length = 1.6666834
+step = 0.16666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334, 0.5, 0.6666667, 0.8333334, 1, 1.1666667, 1.3333334, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+}
+
+[sub_resource type="Animation" id="Animation_87vku"]
+resource_name = "roar"
+length = 0.6666834
+step = 0.16666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [14, 15, 16, 17]
+}
+
+[sub_resource type="Animation" id="Animation_wyb10"]
+resource_name = "hit"
+length = 0.33335
+step = 0.16666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.16666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [18, 19]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k06qg"]
+_data = {
+&"RESET": SubResource("Animation_h4w03"),
+&"hit": SubResource("Animation_wyb10"),
+&"idle": SubResource("Animation_mdjut"),
+&"roar": SubResource("Animation_87vku"),
+&"roll": SubResource("Animation_k06qg")
+}
+
 [node name="Dino" instance=ExtResource("1_4bgn6")]
+info = ExtResource("2_mdjut")
 
 [node name="Shadow" parent="." index="0"]
 scale = Vector2(6.6249995, 1)
@@ -15,3 +110,9 @@ position = Vector2(8, -54)
 texture = ExtResource("3_xurc8")
 hframes = 5
 vframes = 4
+
+[node name="AnimationPlayer" parent="." index="2"]
+libraries = {
+&"": SubResource("AnimationLibrary_k06qg")
+}
+autoplay = "idle"
