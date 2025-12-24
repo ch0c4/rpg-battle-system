@@ -1,0 +1,52 @@
+[gd_scene load_steps=9 format=3 uid="uid://bf2wjrkkoiq3c"]
+
+[ext_resource type="PackedScene" uid="uid://y4m2ue2r6e77" path="res://Entities/Effect/effect.tscn" id="1_6vqlu"]
+[ext_resource type="Texture2D" uid="uid://ck1ymb8hjh8u2" path="res://Entities/Effect/Wind/Assets/wind_effect.png" id="2_b0wf4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n3vye"]
+atlas = ExtResource("2_b0wf4")
+region = Rect2(0, 0, 81, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_04uqd"]
+atlas = ExtResource("2_b0wf4")
+region = Rect2(81, 0, 81, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_34scf"]
+atlas = ExtResource("2_b0wf4")
+region = Rect2(162, 0, 81, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qvfx6"]
+atlas = ExtResource("2_b0wf4")
+region = Rect2(243, 0, 81, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tn0dy"]
+atlas = ExtResource("2_b0wf4")
+region = Rect2(324, 0, 81, 72)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c0voh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n3vye")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_04uqd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_34scf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qvfx6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tn0dy")
+}],
+"loop": false,
+"name": &"default",
+"speed": 7.0
+}]
+
+[node name="WindEffect" instance=ExtResource("1_6vqlu")]
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+sprite_frames = SubResource("SpriteFrames_c0voh")
