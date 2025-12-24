@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Action" load_steps=5 format=3 uid="uid://dls6ehdfi6ppy"]
+
+[ext_resource type="PackedScene" uid="uid://cp3186gr4l7f5" path="res://Entities/Effect/Guard/guard_effect.tscn" id="1_ji1m3"]
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="1_w2jtc"]
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="2_ji1m3"]
+[ext_resource type="Resource" uid="uid://24y0nw35uexs" path="res://Entities/Monsters/Reptile/Resources/reptile_guard_effect.tres" id="3_drbxv"]
+
+[resource]
+script = ExtResource("2_ji1m3")
+animation = ExtResource("1_ji1m3")
+name = "Guard"
+anim_name = &"guard"
+target = 4
+effect = Array[ExtResource("1_w2jtc")]([ExtResource("3_drbxv")])
+metadata/_custom_type_script = "uid://co57ijainkf2b"

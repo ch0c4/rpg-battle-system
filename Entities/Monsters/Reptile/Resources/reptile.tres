@@ -1,7 +1,9 @@
-[gd_resource type="Resource" script_class="Fighter" load_steps=5 format=3 uid="uid://b7p3fa43jmvbq"]
+[gd_resource type="Resource" script_class="Fighter" load_steps=7 format=3 uid="uid://b7p3fa43jmvbq"]
 
 [ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="1_5vlah"]
 [ext_resource type="Script" uid="uid://c41kfduj2siwv" path="res://Scripts/Resources/fighter.gd" id="2_2vhad"]
+[ext_resource type="Resource" uid="uid://dl40g60eon2yj" path="res://Entities/Monsters/Reptile/Resources/reptile_attack_action.tres" id="2_phhwl"]
+[ext_resource type="Resource" uid="uid://dls6ehdfi6ppy" path="res://Entities/Monsters/Reptile/Resources/reptile_guard_action.tres" id="3_gxo5v"]
 [ext_resource type="Texture2D" uid="uid://0t4i4oxfpso2" path="res://Entities/Monsters/Reptile/Assets/reptile-spritesheet.png" id="4_14mts"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_w208l"]
@@ -17,4 +19,5 @@ max_attack = 9
 speed = 10
 protection = 6
 max_hp = 110
+actions = Array[ExtResource("1_5vlah")]([ExtResource("2_phhwl"), ExtResource("3_gxo5v")])
 metadata/_custom_type_script = "uid://c41kfduj2siwv"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Action" load_steps=4 format=3 uid="uid://57t63vq10qrr"]
+
+[ext_resource type="PackedScene" uid="uid://675nn1oac45b" path="res://Entities/Effect/Attack/attack_effect.tscn" id="1_kmf3u"]
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="1_usqm7"]
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="2_kmf3u"]
+
+[resource]
+script = ExtResource("2_kmf3u")
+animation = ExtResource("1_kmf3u")
+name = "Jump"
+anim_name = &"jump"
+damage_percent = 95
+metadata/_custom_type_script = "uid://co57ijainkf2b"

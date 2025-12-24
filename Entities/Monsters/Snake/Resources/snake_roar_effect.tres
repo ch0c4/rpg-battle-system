@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Effect" load_steps=4 format=3 uid="uid://cln8c3tlo2qnq"]
+
+[ext_resource type="PackedScene" uid="uid://vyqg2m0rjhxi" path="res://Entities/Effect/Lightning/lightning_effect.tscn" id="1_3gtb2"]
+[ext_resource type="Texture2D" uid="uid://duo18gphrc1i5" path="res://Resources/Effects/Assets/stun_effect_icon.tres" id="1_gawyx"]
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="1_xhh5d"]
+
+[resource]
+script = ExtResource("1_xhh5d")
+icon = ExtResource("1_gawyx")
+name = "Roar"
+turn_duration = 1
+effect_type = 1
+status = 4
+animation = ExtResource("1_3gtb2")
+metadata/_custom_type_script = "uid://d3dv37vytrihm"
