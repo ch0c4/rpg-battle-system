@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Effect" load_steps=4 format=3 uid="uid://8m0d0fqxfidb"]
+
+[ext_resource type="PackedScene" uid="uid://cqvww04ycy6pi" path="res://Entities/Effect/Burn/burn_effect.tscn" id="1_e7a8e"]
+[ext_resource type="Texture2D" uid="uid://c0wb08buadd44" path="res://Resources/Effects/Assets/burn_effect_icon.tres" id="2_sc1rb"]
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="3_eenac"]
+
+[resource]
+script = ExtResource("3_eenac")
+icon = ExtResource("2_sc1rb")
+name = "Burn"
+amount = 5
+turn_duration = 3
+effect_type = 1
+status = 3
+animation = ExtResource("1_e7a8e")
+metadata/_custom_type_script = "uid://d3dv37vytrihm"

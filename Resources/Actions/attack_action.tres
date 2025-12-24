@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Action" load_steps=6 format=3 uid="uid://o6ax3rtuf0r6"]
+
+[ext_resource type="PackedScene" uid="uid://675nn1oac45b" path="res://Entities/Effect/Attack/attack_effect.tscn" id="1_jghky"]
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="1_qhbij"]
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="2_c7lpf"]
+[ext_resource type="Texture2D" uid="uid://dj8xnkri1iun5" path="res://Resources/Actions/Assets/action-spritesheet.png" id="3_p7eff"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qslyj"]
+atlas = ExtResource("3_p7eff")
+region = Rect2(120, 0, 40, 40)
+
+[resource]
+script = ExtResource("2_c7lpf")
+animation = ExtResource("1_jghky")
+name = "Attack"
+icon = SubResource("AtlasTexture_qslyj")
+damage_percent = 95
+metadata/_custom_type_script = "uid://co57ijainkf2b"

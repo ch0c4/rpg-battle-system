@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Action" load_steps=6 format=3 uid="uid://cn7ek3qqr3a4h"]
+
+[ext_resource type="PackedScene" uid="uid://vyqg2m0rjhxi" path="res://Entities/Effect/Lightning/lightning_effect.tscn" id="1_b245d"]
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="1_pbaog"]
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="2_egkto"]
+[ext_resource type="Resource" uid="uid://co2dy2a7k4qtj" path="res://Entities/Heroes/Liora/Resources/liora_stun_effect.tres" id="3_1pfjc"]
+[ext_resource type="Texture2D" uid="uid://h3hwy3tq5ana" path="res://Resources/Actions/Assets/stun_attack_icon.tres" id="3_jxar1"]
+
+[resource]
+script = ExtResource("2_egkto")
+animation = ExtResource("1_b245d")
+name = "Stun"
+icon = ExtResource("3_jxar1")
+anim_name = &"stun_attack"
+damage_percent = 90
+effect = Array[ExtResource("1_pbaog")]([ExtResource("3_1pfjc")])
+metadata/_custom_type_script = "uid://co57ijainkf2b"

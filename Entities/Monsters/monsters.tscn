@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddj1utq7c4jr5"]
+
+[ext_resource type="Script" uid="uid://dd17lp3n2sref" path="res://Entities/Monsters/monsters.gd" id="1_wjxvl"]
+
+[node name="Monsters" type="Node2D"]
+script = ExtResource("1_wjxvl")
+
+[node name="Shadow" type="Sprite2D" parent="."]
+
+[node name="Body" type="Sprite2D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://c42q1yr8gnxas"]
+
+[ext_resource type="PackedScene" uid="uid://ddj1utq7c4jr5" path="res://Entities/Monsters/monsters.tscn" id="1_doctl"]
+[ext_resource type="Texture2D" uid="uid://eau0yp0molit" path="res://Entities/Monsters/Assets/shadow.png" id="2_7jd68"]
+[ext_resource type="Texture2D" uid="uid://672nmov8mtig" path="res://Entities/Monsters/Boar/Assets/boar-spritesheet.png" id="3_bo7fc"]
+
+[node name="Boar" instance=ExtResource("1_doctl")]
+
+[node name="Shadow" parent="." index="0"]
+scale = Vector2(8.875, 2.46875)
+texture = ExtResource("2_7jd68")
+
+[node name="Body" parent="." index="1"]
+position = Vector2(7, -80)
+texture = ExtResource("3_bo7fc")
+hframes = 6
+vframes = 6

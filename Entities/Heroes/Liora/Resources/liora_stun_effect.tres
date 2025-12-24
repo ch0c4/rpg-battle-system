@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Effect" load_steps=3 format=3 uid="uid://co2dy2a7k4qtj"]
+
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="1_dcaq8"]
+[ext_resource type="Texture2D" uid="uid://duo18gphrc1i5" path="res://Resources/Effects/Assets/stun_effect_icon.tres" id="1_fp3mq"]
+
+[resource]
+script = ExtResource("1_dcaq8")
+icon = ExtResource("1_fp3mq")
+name = "Stun"
+turn_duration = 1
+effect_type = 1
+status = 4
+metadata/_custom_type_script = "uid://d3dv37vytrihm"

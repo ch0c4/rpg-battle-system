@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Action" load_steps=6 format=3 uid="uid://djdejflsa2lnc"]
+
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="1_76jmq"]
+[ext_resource type="PackedScene" uid="uid://dt3m1eljck7co" path="res://Entities/Effect/Heal/heal_effect.tscn" id="1_cntsp"]
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="2_0064m"]
+[ext_resource type="Texture2D" uid="uid://v66a7e3ooutl" path="res://Resources/Actions/Assets/heal_icon.tres" id="3_45gha"]
+[ext_resource type="Resource" uid="uid://cmoc6fn0vxlwt" path="res://Entities/Heroes/Nymor/Resources/nymor_heal_effect.tres" id="3_mmryk"]
+
+[resource]
+script = ExtResource("2_0064m")
+animation = ExtResource("1_cntsp")
+name = "Heal"
+icon = ExtResource("3_45gha")
+anim_name = &"heal"
+target = 1
+effect = Array[ExtResource("1_76jmq")]([ExtResource("3_mmryk")])
+metadata/_custom_type_script = "uid://co57ijainkf2b"

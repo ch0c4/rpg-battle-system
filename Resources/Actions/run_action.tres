@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Action" load_steps=5 format=3 uid="uid://5fxhsrwoq0r3"]
+
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="1_mudxn"]
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="2_al5ot"]
+[ext_resource type="Texture2D" uid="uid://dj8xnkri1iun5" path="res://Resources/Actions/Assets/action-spritesheet.png" id="2_l0lif"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5b2b5"]
+atlas = ExtResource("2_l0lif")
+region = Rect2(40, 0, 40, 40)
+
+[resource]
+script = ExtResource("2_al5ot")
+name = "Run"
+icon = SubResource("AtlasTexture_5b2b5")
+target = 4
+metadata/_custom_type_script = "uid://co57ijainkf2b"

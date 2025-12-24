@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Fighter" load_steps=6 format=3 uid="uid://dqiaudyy2m738"]
+
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="1_t8jvf"]
+[ext_resource type="Resource" uid="uid://cp7bx8h5ttj65" path="res://Entities/Heroes/Vaelis/Resources/vaelis_attack_action.tres" id="2_3nx0y"]
+[ext_resource type="Script" uid="uid://c41kfduj2siwv" path="res://Scripts/Resources/fighter.gd" id="2_mohji"]
+[ext_resource type="Resource" uid="uid://db7al1ubmv138" path="res://Entities/Heroes/Vaelis/Resources/vaelis_fireball_action.tres" id="3_b5adb"]
+[ext_resource type="Texture2D" uid="uid://d0rc2t6ppwd7k" path="res://Entities/Heroes/Vaelis/Assets/vaelis-faceset.png" id="6_yhr0k"]
+
+[resource]
+script = ExtResource("2_mohji")
+name = "Vaelis"
+faceset = ExtResource("6_yhr0k")
+min_attack = 4
+max_attack = 7
+speed = 10
+protection = 2
+max_hp = 85
+max_mana = 120
+actions = Array[ExtResource("1_t8jvf")]([ExtResource("2_3nx0y"), ExtResource("3_b5adb")])
+metadata/_custom_type_script = "uid://c41kfduj2siwv"

@@ -1,0 +1,68 @@
+[gd_scene load_steps=11 format=3 uid="uid://dt3m1eljck7co"]
+
+[ext_resource type="PackedScene" uid="uid://y4m2ue2r6e77" path="res://Entities/Effect/effect.tscn" id="1_kp03w"]
+[ext_resource type="Texture2D" uid="uid://c5va3cps014e8" path="res://Entities/Effect/Heal/Assets/heal_effect.png" id="2_gv8rr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gv8rr"]
+atlas = ExtResource("2_gv8rr")
+region = Rect2(0, 0, 65, 69)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ri2wi"]
+atlas = ExtResource("2_gv8rr")
+region = Rect2(65, 0, 65, 69)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pcboe"]
+atlas = ExtResource("2_gv8rr")
+region = Rect2(130, 0, 65, 69)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n6y8d"]
+atlas = ExtResource("2_gv8rr")
+region = Rect2(195, 0, 65, 69)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1uk2l"]
+atlas = ExtResource("2_gv8rr")
+region = Rect2(260, 0, 65, 69)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hkuhs"]
+atlas = ExtResource("2_gv8rr")
+region = Rect2(325, 0, 65, 69)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3258x"]
+atlas = ExtResource("2_gv8rr")
+region = Rect2(390, 0, 65, 69)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xrkll"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gv8rr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ri2wi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pcboe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n6y8d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1uk2l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hkuhs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3258x")
+}],
+"loop": false,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="HealEffect" instance=ExtResource("1_kp03w")]
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+sprite_frames = SubResource("SpriteFrames_xrkll")
+frame = 6
+frame_progress = 1.0

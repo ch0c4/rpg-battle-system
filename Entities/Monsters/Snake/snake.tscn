@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dwt1llpbrh5m0"]
+
+[ext_resource type="PackedScene" uid="uid://ddj1utq7c4jr5" path="res://Entities/Monsters/monsters.tscn" id="1_srnh4"]
+[ext_resource type="Texture2D" uid="uid://eau0yp0molit" path="res://Entities/Monsters/Assets/shadow.png" id="2_10avm"]
+[ext_resource type="Texture2D" uid="uid://mtw3nu2ga1vu" path="res://Entities/Monsters/Snake/Assets/snake-spritesheet.png" id="3_ki16y"]
+
+[node name="Snake" instance=ExtResource("1_srnh4")]
+
+[node name="Shadow" parent="." index="0"]
+scale = Vector2(4.875, 1.25)
+texture = ExtResource("2_10avm")
+
+[node name="Body" parent="." index="1"]
+position = Vector2(29, -43)
+texture = ExtResource("3_ki16y")
+hframes = 5
+vframes = 4

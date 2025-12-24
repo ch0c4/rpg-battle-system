@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Fighter" load_steps=6 format=3 uid="uid://bttbdbkbvtv0x"]
+
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="1_ts4pj"]
+[ext_resource type="Script" uid="uid://c41kfduj2siwv" path="res://Scripts/Resources/fighter.gd" id="2_6sqoh"]
+[ext_resource type="Resource" uid="uid://c10lkce4wmvei" path="res://Entities/Heroes/Liora/Resources/liora_attack_action.tres" id="2_g6m67"]
+[ext_resource type="Resource" uid="uid://cn7ek3qqr3a4h" path="res://Entities/Heroes/Liora/Resources/liora_stun_attack_action.tres" id="3_73su8"]
+[ext_resource type="Texture2D" uid="uid://biwfv3mjy0on4" path="res://Entities/Heroes/Liora/Assets/liora-faceset.png" id="4_g6m67"]
+
+[resource]
+script = ExtResource("2_6sqoh")
+name = "Liora"
+faceset = ExtResource("4_g6m67")
+min_attack = 7
+max_attack = 11
+speed = 14
+protection = 3
+max_hp = 95
+max_mana = 20
+actions = Array[ExtResource("1_ts4pj")]([ExtResource("2_g6m67"), ExtResource("3_73su8")])
+metadata/_custom_type_script = "uid://c41kfduj2siwv"

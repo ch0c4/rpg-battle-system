@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://bc6ud577iasla"]
+
+[ext_resource type="PackedScene" uid="uid://ddj1utq7c4jr5" path="res://Entities/Monsters/monsters.tscn" id="1_cct2d"]
+[ext_resource type="Texture2D" uid="uid://eau0yp0molit" path="res://Entities/Monsters/Assets/shadow.png" id="2_fvg4j"]
+[ext_resource type="Resource" uid="uid://dpxl8m4263jf1" path="res://Entities/Monsters/Bat/Resources/bat.tres" id="2_odeq8"]
+[ext_resource type="Texture2D" uid="uid://bo48krsj8qb20" path="res://Entities/Monsters/Bat/Assets/bat-spritesheet.png" id="3_odeq8"]
+
+[sub_resource type="Animation" id="Animation_odeq8"]
+resource_name = "idle"
+loop_mode = 1
+step = 0.1
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_875jw"]
+_data = {
+&"idle": SubResource("Animation_odeq8")
+}
+
+[node name="Bat" instance=ExtResource("1_cct2d")]
+info = ExtResource("2_odeq8")
+
+[node name="Shadow" parent="." index="0"]
+scale = Vector2(5.2500005, 1.7500001)
+texture = ExtResource("2_fvg4j")
+
+[node name="Body" parent="." index="1"]
+position = Vector2(-2, -62)
+texture = ExtResource("3_odeq8")
+hframes = 5
+vframes = 4
+
+[node name="AnimationPlayer" parent="." index="2"]
+libraries = {
+&"": SubResource("AnimationLibrary_875jw")
+}
+autoplay = "idle"

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Fighter" load_steps=7 format=3 uid="uid://dsquy7isrfc5j"]
+
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="1_ayxpc"]
+[ext_resource type="Resource" uid="uid://brecicc0q43n7" path="res://Resources/Actions/enemy_attack_action.tres" id="2_hyavq"]
+[ext_resource type="Script" uid="uid://c41kfduj2siwv" path="res://Scripts/Resources/fighter.gd" id="2_lvock"]
+[ext_resource type="Texture2D" uid="uid://dvsr0l0qa13b5" path="res://Entities/Monsters/Ghost/Assets/ghost-spritesheet.png" id="2_t4yq6"]
+[ext_resource type="Resource" uid="uid://dbksut361xhx7" path="res://Resources/Actions/enemy_heal_action.tres" id="3_uwrr6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hyavq"]
+atlas = ExtResource("2_t4yq6")
+region = Rect2(14, 4, 84, 70)
+
+[resource]
+script = ExtResource("2_lvock")
+name = "Ghost"
+faceset = SubResource("AtlasTexture_hyavq")
+min_attack = 3
+max_attack = 5
+speed = 13
+protection = 2
+max_hp = 55
+max_mana = 80
+actions = Array[ExtResource("1_ayxpc")]([ExtResource("2_hyavq"), ExtResource("3_uwrr6")])
+metadata/_custom_type_script = "uid://c41kfduj2siwv"

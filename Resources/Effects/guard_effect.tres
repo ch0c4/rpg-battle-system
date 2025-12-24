@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Effect" load_steps=5 format=3 uid="uid://br04ies7h3g1r"]
+
+[ext_resource type="PackedScene" uid="uid://cp3186gr4l7f5" path="res://Entities/Effect/Guard/guard_effect.tscn" id="1_b3p6s"]
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="1_raix2"]
+[ext_resource type="Texture2D" uid="uid://2xlv1lpw3fso" path="res://Resources/Effects/Assets/effect-spritesheet.png" id="2_7trp2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q0cag"]
+atlas = ExtResource("2_7trp2")
+region = Rect2(143, 0, 13, 14)
+
+[resource]
+script = ExtResource("1_raix2")
+icon = SubResource("AtlasTexture_q0cag")
+name = "Guard"
+amount = 30
+turn_duration = 1
+effect_type = 4
+buff_type = 1
+buff_amount_type = 1
+animation = ExtResource("1_b3p6s")
+metadata/_custom_type_script = "uid://d3dv37vytrihm"

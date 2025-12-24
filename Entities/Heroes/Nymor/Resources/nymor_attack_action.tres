@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Action" load_steps=5 format=3 uid="uid://bd4bpsx3y7n07"]
+
+[ext_resource type="PackedScene" uid="uid://675nn1oac45b" path="res://Entities/Effect/Attack/attack_effect.tscn" id="1_jgjhm"]
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="1_ll0po"]
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="2_jgjhm"]
+[ext_resource type="Texture2D" uid="uid://dpxrt56bewcnv" path="res://Resources/Actions/Assets/attack_icon.tres" id="3_a73is"]
+
+[resource]
+script = ExtResource("2_jgjhm")
+animation = ExtResource("1_jgjhm")
+name = "Attack"
+icon = ExtResource("3_a73is")
+anim_name = &"attack"
+damage_percent = 95
+metadata/_custom_type_script = "uid://co57ijainkf2b"

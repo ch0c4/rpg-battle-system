@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Action" load_steps=6 format=3 uid="uid://db7al1ubmv138"]
+
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="1_awvp1"]
+[ext_resource type="PackedScene" uid="uid://c8shwpbtndt4l" path="res://Entities/Effect/Fireball/fireball.tscn" id="1_n0s84"]
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="2_jeqrb"]
+[ext_resource type="Texture2D" uid="uid://cnjm4rjd0l5gr" path="res://Resources/Actions/Assets/fireball_icon.tres" id="3_co8dt"]
+[ext_resource type="Resource" uid="uid://8m0d0fqxfidb" path="res://Entities/Heroes/Vaelis/Resources/vaelis_burn_effect.tres" id="3_k4cad"]
+
+[resource]
+script = ExtResource("2_jeqrb")
+animation = ExtResource("1_n0s84")
+name = "Fireball"
+icon = ExtResource("3_co8dt")
+anim_name = &"fireball"
+damage_percent = 120
+effect = Array[ExtResource("1_awvp1")]([ExtResource("3_k4cad")])
+metadata/_custom_type_script = "uid://co57ijainkf2b"

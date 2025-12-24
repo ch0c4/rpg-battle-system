@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Fighter" load_steps=6 format=3 uid="uid://bjcm60u6xpiv4"]
+
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="1_ibxn4"]
+[ext_resource type="Texture2D" uid="uid://dwn4ek2id62gk" path="res://Entities/Monsters/Slime/Assets/slime-spritesheet.png" id="2_5ej7n"]
+[ext_resource type="Resource" uid="uid://brecicc0q43n7" path="res://Resources/Actions/enemy_attack_action.tres" id="2_hv5dn"]
+[ext_resource type="Script" uid="uid://c41kfduj2siwv" path="res://Scripts/Resources/fighter.gd" id="2_sx6k1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hv5dn"]
+atlas = ExtResource("2_5ej7n")
+region = Rect2(26, 42, 52, 56)
+
+[resource]
+script = ExtResource("2_sx6k1")
+name = "Slime"
+faceset = SubResource("AtlasTexture_hv5dn")
+min_attack = 2
+max_attack = 4
+speed = 6
+protection = 2
+max_hp = 50
+actions = Array[ExtResource("1_ibxn4")]([ExtResource("2_hv5dn")])
+metadata/_custom_type_script = "uid://c41kfduj2siwv"

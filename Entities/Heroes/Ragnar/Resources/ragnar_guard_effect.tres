@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Effect" load_steps=4 format=3 uid="uid://c8jevgfvhrf4l"]
+
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="1_clmy4"]
+[ext_resource type="Texture2D" uid="uid://c7lkqjblx8ecl" path="res://Resources/Effects/Assets/guard_effect_icon.tres" id="1_iaph0"]
+[ext_resource type="PackedScene" uid="uid://cp3186gr4l7f5" path="res://Entities/Effect/Guard/guard_effect.tscn" id="1_ltk76"]
+
+[resource]
+script = ExtResource("1_clmy4")
+icon = ExtResource("1_iaph0")
+name = "Guard"
+amount = 30
+turn_duration = 1
+effect_type = 4
+buff_type = 1
+buff_amount_type = 1
+animation = ExtResource("1_ltk76")
+metadata/_custom_type_script = "uid://d3dv37vytrihm"

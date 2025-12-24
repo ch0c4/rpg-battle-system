@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Fighter" load_steps=6 format=3 uid="uid://di4uecex1gy3w"]
+
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="1_vx4y6"]
+[ext_resource type="Script" uid="uid://c41kfduj2siwv" path="res://Scripts/Resources/fighter.gd" id="2_00ilf"]
+[ext_resource type="Texture2D" uid="uid://2njruhgids5o" path="res://Entities/Monsters/Dino/Assets/dino-spritesheet.png" id="2_4ea3d"]
+[ext_resource type="Resource" uid="uid://brecicc0q43n7" path="res://Resources/Actions/enemy_attack_action.tres" id="2_d85b0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d85b0"]
+atlas = ExtResource("2_4ea3d")
+region = Rect2(60, 57, 62, 59)
+
+[resource]
+script = ExtResource("2_00ilf")
+name = "Dino"
+faceset = SubResource("AtlasTexture_d85b0")
+min_attack = 5
+max_attack = 8
+speed = 12
+protection = 3
+max_hp = 70
+actions = Array[ExtResource("1_vx4y6")]([ExtResource("2_d85b0")])
+metadata/_custom_type_script = "uid://c41kfduj2siwv"

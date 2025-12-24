@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Effect" load_steps=3 format=3 uid="uid://dmovs62jekke7"]
+
+[ext_resource type="Texture2D" uid="uid://dslik3yw7rakd" path="res://Resources/Effects/Assets/heal_effect_icon.tres" id="1_kefwx"]
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="1_yngy0"]
+
+[resource]
+script = ExtResource("1_yngy0")
+icon = ExtResource("1_kefwx")
+name = "Heal"
+amount = 15
+effect_type = 2
+metadata/_custom_type_script = "uid://d3dv37vytrihm"

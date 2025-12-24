@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Action" load_steps=7 format=3 uid="uid://cgoic2r7iy7jt"]
+
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="1_0on1v"]
+[ext_resource type="PackedScene" uid="uid://cp3186gr4l7f5" path="res://Entities/Effect/Guard/guard_effect.tscn" id="1_y1bip"]
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="2_le2r4"]
+[ext_resource type="Texture2D" uid="uid://dj8xnkri1iun5" path="res://Resources/Actions/Assets/action-spritesheet.png" id="3_kq3vk"]
+[ext_resource type="Resource" uid="uid://br04ies7h3g1r" path="res://Resources/Effects/guard_effect.tres" id="3_xqdwe"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xqdwe"]
+atlas = ExtResource("3_kq3vk")
+region = Rect2(160, 0, 40, 40)
+
+[resource]
+script = ExtResource("2_le2r4")
+animation = ExtResource("1_y1bip")
+name = "Guard"
+icon = SubResource("AtlasTexture_xqdwe")
+target = 1
+effect = Array[ExtResource("1_0on1v")]([ExtResource("3_xqdwe")])
+metadata/_custom_type_script = "uid://co57ijainkf2b"

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Action" load_steps=6 format=3 uid="uid://ctwban2gnk6a8"]
+
+[ext_resource type="PackedScene" uid="uid://bpen4b3m5ok2c" path="res://Entities/Effect/RockFall/rock_fall_effect.tscn" id="1_xkk5r"]
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="2_drp15"]
+[ext_resource type="Texture2D" uid="uid://dj8xnkri1iun5" path="res://Resources/Actions/Assets/action-spritesheet.png" id="3_yl7c4"]
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="4_2p30f"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k7y4x"]
+atlas = ExtResource("3_yl7c4")
+region = Rect2(1400, 0, 40, 40)
+
+[resource]
+script = ExtResource("4_2p30f")
+animation = ExtResource("1_xkk5r")
+name = "Rock Fall"
+icon = SubResource("AtlasTexture_k7y4x")
+damage_percent = 70
+target = 3
+metadata/_custom_type_script = "uid://co57ijainkf2b"

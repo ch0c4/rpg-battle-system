@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Fighter" load_steps=6 format=3 uid="uid://dpxl8m4263jf1"]
+
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="1_xrmby"]
+[ext_resource type="Script" uid="uid://c41kfduj2siwv" path="res://Scripts/Resources/fighter.gd" id="2_0o4k6"]
+[ext_resource type="Resource" uid="uid://brecicc0q43n7" path="res://Resources/Actions/enemy_attack_action.tres" id="2_h78rd"]
+[ext_resource type="Texture2D" uid="uid://bo48krsj8qb20" path="res://Entities/Monsters/Bat/Assets/bat-spritesheet.png" id="3_t4lks"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1pqq1"]
+atlas = ExtResource("3_t4lks")
+region = Rect2(43, 24, 45, 51)
+
+[resource]
+script = ExtResource("2_0o4k6")
+name = "Bat"
+faceset = SubResource("AtlasTexture_1pqq1")
+min_attack = 3
+max_attack = 5
+speed = 16
+protection = 1
+max_hp = 35
+actions = Array[ExtResource("1_xrmby")]([ExtResource("2_h78rd")])
+metadata/_custom_type_script = "uid://c41kfduj2siwv"

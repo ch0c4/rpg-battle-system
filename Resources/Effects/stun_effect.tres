@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Effect" load_steps=5 format=3 uid="uid://bwoay0piq4y15"]
+
+[ext_resource type="PackedScene" uid="uid://vyqg2m0rjhxi" path="res://Entities/Effect/Lightning/lightning_effect.tscn" id="1_57mt8"]
+[ext_resource type="Texture2D" uid="uid://2xlv1lpw3fso" path="res://Resources/Effects/Assets/effect-spritesheet.png" id="2_khnfv"]
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="3_3s3dn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_14yr1"]
+atlas = ExtResource("2_khnfv")
+region = Rect2(0, 0, 13, 14)
+
+[resource]
+script = ExtResource("3_3s3dn")
+icon = SubResource("AtlasTexture_14yr1")
+turn_duration = 1
+animation = ExtResource("1_57mt8")
+metadata/_custom_type_script = "uid://d3dv37vytrihm"

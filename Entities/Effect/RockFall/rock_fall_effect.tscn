@@ -1,0 +1,94 @@
+[gd_scene load_steps=15 format=3 uid="uid://bpen4b3m5ok2c"]
+
+[ext_resource type="PackedScene" uid="uid://y4m2ue2r6e77" path="res://Entities/Effect/effect.tscn" id="1_gx16d"]
+[ext_resource type="Texture2D" uid="uid://wtbmko1snv5f" path="res://Entities/Effect/RockFall/Assets/rock_fall_effect.png" id="2_d0l5u"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qsnvr"]
+atlas = ExtResource("2_d0l5u")
+region = Rect2(0, 0, 193, 190)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3omxd"]
+atlas = ExtResource("2_d0l5u")
+region = Rect2(193, 0, 193, 190)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_31ncg"]
+atlas = ExtResource("2_d0l5u")
+region = Rect2(386, 0, 193, 190)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7t7ij"]
+atlas = ExtResource("2_d0l5u")
+region = Rect2(579, 0, 193, 190)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0n04q"]
+atlas = ExtResource("2_d0l5u")
+region = Rect2(772, 0, 193, 190)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pphu6"]
+atlas = ExtResource("2_d0l5u")
+region = Rect2(965, 0, 193, 190)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mac8d"]
+atlas = ExtResource("2_d0l5u")
+region = Rect2(1158, 0, 193, 190)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pdw0q"]
+atlas = ExtResource("2_d0l5u")
+region = Rect2(1351, 0, 193, 190)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mr4r0"]
+atlas = ExtResource("2_d0l5u")
+region = Rect2(1544, 0, 193, 190)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l0auy"]
+atlas = ExtResource("2_d0l5u")
+region = Rect2(1737, 0, 193, 190)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6hjuu"]
+atlas = ExtResource("2_d0l5u")
+region = Rect2(1930, 0, 193, 190)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7jaek"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qsnvr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3omxd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_31ncg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7t7ij")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0n04q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pphu6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mac8d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pdw0q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mr4r0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l0auy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6hjuu")
+}],
+"loop": false,
+"name": &"default",
+"speed": 7.0
+}]
+
+[node name="RockFallEffect" instance=ExtResource("1_gx16d")]
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+sprite_frames = SubResource("SpriteFrames_7jaek")

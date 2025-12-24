@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Action" load_steps=7 format=3 uid="uid://cb24anqqgkujb"]
+
+[ext_resource type="PackedScene" uid="uid://dt3m1eljck7co" path="res://Entities/Effect/Heal/heal_effect.tscn" id="1_6vmdh"]
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="2_eex86"]
+[ext_resource type="Resource" uid="uid://dmovs62jekke7" path="res://Resources/Effects/heal_effect.tres" id="3_eex86"]
+[ext_resource type="Texture2D" uid="uid://dj8xnkri1iun5" path="res://Resources/Actions/Assets/action-spritesheet.png" id="3_fox8m"]
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="4_liado"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_msggi"]
+atlas = ExtResource("3_fox8m")
+region = Rect2(1120, 0, 40, 40)
+
+[resource]
+script = ExtResource("4_liado")
+animation = ExtResource("1_6vmdh")
+name = "Group Heal"
+icon = SubResource("AtlasTexture_msggi")
+target = 3
+effect = Array[ExtResource("2_eex86")]([ExtResource("3_eex86")])
+metadata/_custom_type_script = "uid://co57ijainkf2b"

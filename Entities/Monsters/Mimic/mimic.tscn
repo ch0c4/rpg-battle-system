@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://ccae5s8l6dd6b"]
+
+[ext_resource type="PackedScene" uid="uid://ddj1utq7c4jr5" path="res://Entities/Monsters/monsters.tscn" id="1_4a8kk"]
+[ext_resource type="Texture2D" uid="uid://eau0yp0molit" path="res://Entities/Monsters/Assets/shadow.png" id="2_7mxxx"]
+[ext_resource type="Texture2D" uid="uid://cosbn8smwi0mx" path="res://Entities/Monsters/Mimic/Assets/mimic-spritesheet.png" id="3_0ri6x"]
+
+[node name="Mimic" instance=ExtResource("1_4a8kk")]
+
+[node name="Shadow" parent="." index="0"]
+scale = Vector2(7.5625005, 2.25)
+texture = ExtResource("2_7mxxx")
+
+[node name="Body" parent="." index="1"]
+position = Vector2(19, -81)
+texture = ExtResource("3_0ri6x")
+hframes = 6
+vframes = 5

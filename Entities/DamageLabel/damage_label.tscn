@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxddj5kfxovgd"]
+
+[ext_resource type="Script" uid="uid://boe0c1nvl3ae1" path="res://Entities/DamageLabel/Scripts/damage_label.gd" id="1_u8p4j"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_u8p4j"]
+radius = 24.0
+
+[node name="DamageLabel" type="RigidBody2D"]
+script = ExtResource("1_u8p4j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_u8p4j")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -20.0
+offset_top = -12.0
+offset_right = 20.0
+offset_bottom = 11.0
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+autostart = true

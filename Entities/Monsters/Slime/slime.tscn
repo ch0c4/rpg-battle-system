@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://lkd3e80nmrgq"]
+
+[ext_resource type="PackedScene" uid="uid://ddj1utq7c4jr5" path="res://Entities/Monsters/monsters.tscn" id="1_6m768"]
+[ext_resource type="Texture2D" uid="uid://eau0yp0molit" path="res://Entities/Monsters/Assets/shadow.png" id="2_bp6nk"]
+[ext_resource type="Texture2D" uid="uid://dwn4ek2id62gk" path="res://Entities/Monsters/Slime/Assets/slime-spritesheet.png" id="3_2aouj"]
+
+[node name="Slime" instance=ExtResource("1_6m768")]
+
+[node name="Shadow" parent="." index="0"]
+scale = Vector2(4.9375, 1.4375)
+texture = ExtResource("2_bp6nk")
+
+[node name="Body" parent="." index="1"]
+position = Vector2(26, -50)
+texture = ExtResource("3_2aouj")
+hframes = 5
+vframes = 5

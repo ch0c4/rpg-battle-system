@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Action" load_steps=6 format=3 uid="uid://bqohts6duytkj"]
+
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="1_hmimo"]
+[ext_resource type="PackedScene" uid="uid://dt3m1eljck7co" path="res://Entities/Effect/Heal/heal_effect.tscn" id="1_nefcs"]
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="2_uj1wg"]
+[ext_resource type="Resource" uid="uid://dmovs62jekke7" path="res://Resources/Effects/heal_effect.tres" id="3_msggi"]
+[ext_resource type="Texture2D" uid="uid://v66a7e3ooutl" path="res://Resources/Actions/Assets/heal_icon.tres" id="4_c58kd"]
+
+[resource]
+script = ExtResource("2_uj1wg")
+animation = ExtResource("1_nefcs")
+name = "Heal"
+icon = ExtResource("4_c58kd")
+target = 1
+effect = Array[ExtResource("1_hmimo")]([ExtResource("3_msggi")])
+metadata/_custom_type_script = "uid://co57ijainkf2b"

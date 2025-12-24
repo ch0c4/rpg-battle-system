@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Action" load_steps=7 format=3 uid="uid://dhmdcjtvrcb5k"]
+
+[ext_resource type="PackedScene" uid="uid://c8shwpbtndt4l" path="res://Entities/Effect/Fireball/fireball.tscn" id="1_w5pyj"]
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="2_n7nl0"]
+[ext_resource type="Resource" uid="uid://c3mk2yni5pdsa" path="res://Resources/Effects/burn_effect.tres" id="3_ffcuh"]
+[ext_resource type="Texture2D" uid="uid://dj8xnkri1iun5" path="res://Resources/Actions/Assets/action-spritesheet.png" id="4_beljk"]
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="5_jtm11"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xl8ff"]
+atlas = ExtResource("4_beljk")
+region = Rect2(240, 0, 40, 40)
+
+[resource]
+script = ExtResource("5_jtm11")
+animation = ExtResource("1_w5pyj")
+name = "Fireball"
+icon = SubResource("AtlasTexture_xl8ff")
+damage_percent = 120
+target = 1
+effect = Array[ExtResource("2_n7nl0")]([ExtResource("3_ffcuh")])
+metadata/_custom_type_script = "uid://co57ijainkf2b"

@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdj7ta2ijlg3h"]
+
+[ext_resource type="Script" uid="uid://1w0en5g8h8jq" path="res://Entities/Heroes/heroes.gd" id="1_owxrn"]
+
+[node name="Heroes" type="Node2D"]
+script = ExtResource("1_owxrn")
+
+[node name="Shadow" type="Sprite2D" parent="."]
+
+[node name="Body" type="Sprite2D" parent="."]
+
+[node name="HeroesPosition" type="Marker2D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

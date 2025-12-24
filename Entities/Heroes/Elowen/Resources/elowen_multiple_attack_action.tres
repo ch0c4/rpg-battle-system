@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Action" load_steps=5 format=3 uid="uid://d1yodfgxevbih"]
+
+[ext_resource type="PackedScene" uid="uid://675nn1oac45b" path="res://Entities/Effect/Attack/attack_effect.tscn" id="1_woh3s"]
+[ext_resource type="Script" uid="uid://d3dv37vytrihm" path="res://Scripts/Resources/effect.gd" id="1_y2cx1"]
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="2_laoe8"]
+[ext_resource type="Texture2D" uid="uid://cyb6xchoatoju" path="res://Resources/Actions/Assets/multiple_attack_icon.tres" id="3_bq3dc"]
+
+[resource]
+script = ExtResource("2_laoe8")
+animation = ExtResource("1_woh3s")
+name = "Multiple Attack"
+icon = ExtResource("3_bq3dc")
+anim_name = &"multiple_attack"
+damage_percent = 70
+target = 2
+metadata/_custom_type_script = "uid://co57ijainkf2b"

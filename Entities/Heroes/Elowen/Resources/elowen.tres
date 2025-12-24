@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Fighter" load_steps=5 format=3 uid="uid://dwn5fdtiga2s8"]
+
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="1_jo13o"]
+[ext_resource type="Script" uid="uid://c41kfduj2siwv" path="res://Scripts/Resources/fighter.gd" id="2_77scq"]
+[ext_resource type="Resource" uid="uid://brqwqqydspih7" path="res://Entities/Heroes/Elowen/Resources/elowen_attack_action.tres" id="2_h103l"]
+[ext_resource type="Texture2D" uid="uid://28gs4rseqcvn" path="res://Entities/Heroes/Elowen/Assets/elowen-faceset.png" id="5_c7dvw"]
+
+[resource]
+script = ExtResource("2_77scq")
+name = "Elowen"
+faceset = ExtResource("5_c7dvw")
+min_attack = 6
+max_attack = 10
+speed = 9
+protection = 5
+max_hp = 110
+max_mana = 40
+actions = Array[ExtResource("1_jo13o")]([ExtResource("2_h103l")])
+metadata/_custom_type_script = "uid://c41kfduj2siwv"

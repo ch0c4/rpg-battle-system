@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Fighter" load_steps=7 format=3 uid="uid://xe723mnfo77x"]
+
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="1_ydrub"]
+[ext_resource type="Resource" uid="uid://brecicc0q43n7" path="res://Resources/Actions/enemy_attack_action.tres" id="2_2akub"]
+[ext_resource type="Script" uid="uid://c41kfduj2siwv" path="res://Scripts/Resources/fighter.gd" id="2_bgc5a"]
+[ext_resource type="Texture2D" uid="uid://mtw3nu2ga1vu" path="res://Entities/Monsters/Snake/Assets/snake-spritesheet.png" id="2_gacqy"]
+[ext_resource type="Resource" uid="uid://dnakmx1udpxv" path="res://Resources/Actions/enemy_poison_action.tres" id="3_3qbaa"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2akub"]
+atlas = ExtResource("2_gacqy")
+region = Rect2(39, 28, 52, 42)
+
+[resource]
+script = ExtResource("2_bgc5a")
+name = "Snake"
+faceset = SubResource("AtlasTexture_2akub")
+min_attack = 4
+max_attack = 6
+speed = 15
+protection = 1
+max_hp = 45
+max_mana = 30
+actions = Array[ExtResource("1_ydrub")]([ExtResource("2_2akub"), ExtResource("3_3qbaa")])
+metadata/_custom_type_script = "uid://c41kfduj2siwv"

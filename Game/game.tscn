@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://cby2b74eg2b68"]
+
+[ext_resource type="Texture2D" uid="uid://oivhesjvwi0b" path="res://HUD/Assets/black-strip.png" id="1_80nbo"]
+[ext_resource type="Texture2D" uid="uid://duu7mborj7y13" path="res://HUD/Assets/desert-bg.png" id="1_e2o6t"]
+
+[node name="Game" type="CanvasLayer"]
+
+[node name="BackgroundContainer" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="BackgroundContainer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_e2o6t")
+
+[node name="BlackStrip" type="TextureRect" parent="BackgroundContainer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_80nbo")
+
+[node name="HUD" type="VBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0

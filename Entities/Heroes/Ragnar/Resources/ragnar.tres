@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Fighter" load_steps=6 format=3 uid="uid://c6jaqcax5v05h"]
+
+[ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="1_yebmd"]
+[ext_resource type="Resource" uid="uid://bgqkpter21w2s" path="res://Entities/Heroes/Ragnar/Resources/ragnar_attack_action.tres" id="2_6utwy"]
+[ext_resource type="Script" uid="uid://c41kfduj2siwv" path="res://Scripts/Resources/fighter.gd" id="2_jr3p5"]
+[ext_resource type="Resource" uid="uid://ciy0if6s5cmhb" path="res://Entities/Heroes/Ragnar/Resources/ragnar_guard_action.tres" id="3_xbesc"]
+[ext_resource type="Texture2D" uid="uid://brqkx3lbdl7ry" path="res://Entities/Heroes/Ragnar/Assets/ragnar-faceset.png" id="5_xbesc"]
+
+[resource]
+script = ExtResource("2_jr3p5")
+name = "Ragnar"
+faceset = ExtResource("5_xbesc")
+min_attack = 9
+max_attack = 11
+speed = 13
+protection = 5
+max_hp = 105
+actions = Array[ExtResource("1_yebmd")]([ExtResource("2_6utwy"), ExtResource("3_xbesc")])
+metadata/_custom_type_script = "uid://c41kfduj2siwv"
