@@ -5,24 +5,6 @@
 [ext_resource type="Resource" uid="uid://ctqnt11b2y5ey" path="res://Entities/Monsters/Boar/Resources/boar.tres" id="2_bo7fc"]
 [ext_resource type="Texture2D" uid="uid://672nmov8mtig" path="res://Entities/Monsters/Boar/Assets/boar-spritesheet.png" id="3_bo7fc"]
 
-[sub_resource type="Animation" id="Animation_7jd68"]
-resource_name = "idle"
-length = 0.70001
-loop_mode = 1
-step = 0.1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Body:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 3, 4, 5, 6]
-}
-
 [sub_resource type="Animation" id="Animation_bo7fc"]
 length = 0.001
 tracks/0/type = "value"
@@ -55,23 +37,6 @@ tracks/0/keys = {
 "values": [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
 }
 
-[sub_resource type="Animation" id="Animation_7x0g5"]
-resource_name = "roll"
-length = 1.2000101
-step = 0.1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Body:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.90000004, 1, 1.1),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
-}
-
 [sub_resource type="Animation" id="Animation_d0ao7"]
 resource_name = "hit"
 length = 0.40001002
@@ -87,6 +52,41 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [19, 20, 21, 22]
+}
+
+[sub_resource type="Animation" id="Animation_7jd68"]
+resource_name = "idle"
+length = 0.70001
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6]
+}
+
+[sub_resource type="Animation" id="Animation_7x0g5"]
+resource_name = "roll"
+length = 1.2000101
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.90000004, 1, 1.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_7u58t"]
@@ -111,7 +111,10 @@ texture = ExtResource("3_bo7fc")
 hframes = 6
 vframes = 6
 
-[node name="AnimationPlayer" parent="." index="2"]
+[node name="MonsterPosition" parent="." index="2"]
+position = Vector2(0, -40)
+
+[node name="AnimationPlayer" parent="." index="3"]
 libraries = {
 &"": SubResource("AnimationLibrary_7u58t")
 }

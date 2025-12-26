@@ -7,6 +7,7 @@ class_name Effect extends Resource
 @export var amount: int
 
 @export var turn_duration: int
+@export var stats_type: Constants.StatType
 @export var effect_type: Constants.EffectType
 @export var status: Constants.StatusType
 @export var buff_type: Constants.BuffType

@@ -1,3 +1,1 @@
-class_name Monsters extends Node2D
-
-@export var info: Fighter
+class_name Monsters extends Combattant

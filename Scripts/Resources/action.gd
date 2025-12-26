@@ -12,7 +12,3 @@ class_name Action extends Resource
 @export var target: Constants.ActionTarget
 
 @export var effect: Array[Effect]
-
-
-func process() -> void:
-	pass
