@@ -11,5 +11,5 @@ animation = ExtResource("1_ji1m3")
 name = "Guard"
 anim_name = &"guard"
 target = 4
-effect = Array[ExtResource("1_w2jtc")]([ExtResource("3_drbxv")])
+effects = Array[ExtResource("1_w2jtc")]([ExtResource("3_drbxv")])
 metadata/_custom_type_script = "uid://co57ijainkf2b"

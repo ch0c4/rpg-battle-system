@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bohunebdhblwg"]
+
+[ext_resource type="Script" uid="uid://mwf77rhm64og" path="res://Entities/Combattants/Scripts/buffs.gd" id="1_5ce5u"]
+
+[node name="Buffs" type="Node"]
+script = ExtResource("1_5ce5u")

@@ -13,5 +13,5 @@ name = "Guard"
 icon = ExtResource("4_awscb")
 anim_name = &"guard"
 target = 1
-effect = Array[ExtResource("1_khfda")]([ExtResource("3_o5mnv")])
+effects = Array[ExtResource("1_khfda")]([ExtResource("3_o5mnv")])
 metadata/_custom_type_script = "uid://co57ijainkf2b"

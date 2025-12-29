@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://bpen4b3m5ok2c"]
 
-[ext_resource type="PackedScene" uid="uid://y4m2ue2r6e77" path="res://Entities/Effect/effect.tscn" id="1_gx16d"]
+[ext_resource type="PackedScene" uid="uid://y4m2ue2r6e77" path="res://Entities/Effect/effect_animation.tscn" id="1_gx16d"]
 [ext_resource type="Texture2D" uid="uid://wtbmko1snv5f" path="res://Entities/Effect/RockFall/Assets/rock_fall_effect.png" id="2_d0l5u"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qsnvr"]

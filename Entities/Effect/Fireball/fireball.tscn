@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://c8shwpbtndt4l"]
 
-[ext_resource type="PackedScene" uid="uid://y4m2ue2r6e77" path="res://Entities/Effect/effect.tscn" id="1_jvcos"]
+[ext_resource type="PackedScene" uid="uid://y4m2ue2r6e77" path="res://Entities/Effect/effect_animation.tscn" id="1_jvcos"]
 [ext_resource type="Texture2D" uid="uid://cr4wqxtmgho6q" path="res://Entities/Effect/Fireball/Assets/fireball_effect.png" id="2_u8mj2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i8r5l"]

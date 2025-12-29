@@ -13,5 +13,5 @@ name = "Fireball"
 icon = ExtResource("3_co8dt")
 anim_name = &"fireball"
 damage_percent = 120
-effect = Array[ExtResource("1_awvp1")]([ExtResource("3_k4cad")])
+effects = Array[ExtResource("1_awvp1")]([ExtResource("3_k4cad")])
 metadata/_custom_type_script = "uid://co57ijainkf2b"

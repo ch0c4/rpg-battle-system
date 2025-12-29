@@ -14,6 +14,7 @@ region = Rect2(52, 70, 91, 70)
 script = ExtResource("2_2gntd")
 name = "Mushroom"
 faceset = SubResource("AtlasTexture_0iaxc")
+player_type = 1
 min_attack = 3
 max_attack = 5
 speed = 8

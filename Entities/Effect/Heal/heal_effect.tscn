@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://dt3m1eljck7co"]
 
-[ext_resource type="PackedScene" uid="uid://y4m2ue2r6e77" path="res://Entities/Effect/effect.tscn" id="1_kp03w"]
+[ext_resource type="PackedScene" uid="uid://y4m2ue2r6e77" path="res://Entities/Effect/effect_animation.tscn" id="1_kp03w"]
 [ext_resource type="Texture2D" uid="uid://c5va3cps014e8" path="res://Entities/Effect/Heal/Assets/heal_effect.png" id="2_gv8rr"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gv8rr"]

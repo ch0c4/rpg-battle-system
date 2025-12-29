@@ -13,5 +13,5 @@ name = "Guard"
 icon = ExtResource("3_quaux")
 anim_name = &"guard"
 target = 1
-effect = Array[ExtResource("1_csoqu")]([ExtResource("3_r2c6g")])
+effects = Array[ExtResource("1_csoqu")]([ExtResource("3_r2c6g")])
 metadata/_custom_type_script = "uid://co57ijainkf2b"

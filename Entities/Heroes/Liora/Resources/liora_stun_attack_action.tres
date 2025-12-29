@@ -13,5 +13,5 @@ name = "Stun"
 icon = ExtResource("3_jxar1")
 anim_name = &"stun_attack"
 damage_percent = 90
-effect = Array[ExtResource("1_pbaog")]([ExtResource("3_1pfjc")])
+effects = Array[ExtResource("1_pbaog")]([ExtResource("3_1pfjc")])
 metadata/_custom_type_script = "uid://co57ijainkf2b"

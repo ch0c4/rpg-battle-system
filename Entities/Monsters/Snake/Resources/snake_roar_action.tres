@@ -10,5 +10,5 @@ script = ExtResource("2_23tkq")
 animation = ExtResource("1_23tkq")
 name = "Roar"
 anim_name = &"roar"
-effect = Array[ExtResource("1_adw0x")]([ExtResource("3_jsl25")])
+effects = Array[ExtResource("1_adw0x")]([ExtResource("3_jsl25")])
 metadata/_custom_type_script = "uid://co57ijainkf2b"

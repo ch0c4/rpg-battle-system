@@ -12,5 +12,5 @@ name = "Lightning"
 anim_name = &"lightning"
 damage_percent = 90
 target = 2
-effect = Array[ExtResource("1_klpxv")]([ExtResource("3_he6md")])
+effects = Array[ExtResource("1_klpxv")]([ExtResource("3_he6md")])
 metadata/_custom_type_script = "uid://co57ijainkf2b"

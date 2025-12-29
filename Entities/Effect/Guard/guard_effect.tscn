@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://cp3186gr4l7f5"]
 
-[ext_resource type="PackedScene" uid="uid://y4m2ue2r6e77" path="res://Entities/Effect/effect.tscn" id="1_vpu5f"]
+[ext_resource type="PackedScene" uid="uid://y4m2ue2r6e77" path="res://Entities/Effect/effect_animation.tscn" id="1_vpu5f"]
 [ext_resource type="Texture2D" uid="uid://bn0vbwhfplo33" path="res://Entities/Effect/Guard/Assets/guard_effect.png" id="2_6kgq8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_moki8"]

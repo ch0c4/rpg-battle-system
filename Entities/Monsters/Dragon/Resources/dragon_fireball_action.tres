@@ -11,5 +11,5 @@ animation = ExtResource("1_v4fjy")
 name = "Fireball"
 anim_name = &"fireball"
 damage_percent = 110
-effect = Array[ExtResource("1_pe732")]([ExtResource("3_wykvj")])
+effects = Array[ExtResource("1_pe732")]([ExtResource("3_wykvj")])
 metadata/_custom_type_script = "uid://co57ijainkf2b"

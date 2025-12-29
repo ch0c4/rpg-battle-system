@@ -14,6 +14,7 @@ region = Rect2(14, 4, 84, 70)
 script = ExtResource("2_lvock")
 name = "Ghost"
 faceset = SubResource("AtlasTexture_hyavq")
+player_type = 1
 min_attack = 3
 max_attack = 5
 speed = 13

@@ -14,6 +14,7 @@ region = Rect2(36, 63, 127, 89)
 script = ExtResource("5_omqir")
 name = "Mimic"
 faceset = SubResource("AtlasTexture_fibkx")
+player_type = 1
 min_attack = 7
 max_attack = 11
 speed = 9

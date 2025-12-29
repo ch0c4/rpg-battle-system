@@ -14,6 +14,7 @@ region = Rect2(93, 56, 105, 75)
 script = ExtResource("2_4lnpt")
 name = "Dragon"
 faceset = SubResource("AtlasTexture_53ai2")
+player_type = 1
 min_attack = 14
 max_attack = 20
 speed = 9

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dy46j04tpp7ug"]
+
+[ext_resource type="Script" uid="uid://b0yg2c1jhwyes" path="res://Entities/Combattants/Scripts/effects.gd" id="1_fl8pq"]
+
+[node name="Effects" type="Node"]
+script = ExtResource("1_fl8pq")

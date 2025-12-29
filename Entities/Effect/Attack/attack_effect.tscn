@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://675nn1oac45b"]
 
-[ext_resource type="PackedScene" uid="uid://y4m2ue2r6e77" path="res://Entities/Effect/effect.tscn" id="1_3ob1k"]
+[ext_resource type="PackedScene" uid="uid://y4m2ue2r6e77" path="res://Entities/Effect/effect_animation.tscn" id="1_3ob1k"]
 [ext_resource type="Texture2D" uid="uid://bcqdurkurdiq2" path="res://Entities/Effect/Attack/Assets/basic-attack-effect.png" id="2_uwhwx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v1qp3"]

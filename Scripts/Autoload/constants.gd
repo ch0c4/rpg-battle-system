@@ -1,5 +1,10 @@
 extends Node
 
+enum PlayerType {
+	PLAYER,
+	ENEMY
+}
+
 enum ActionType {
 	MELEE,
 	RANGED,

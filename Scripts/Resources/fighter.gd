@@ -3,6 +3,8 @@ class_name Fighter extends Resource
 @export var name: String
 @export var faceset: Texture2D
 
+@export var player_type: Constants.PlayerType
+
 @export var min_attack: int
 @export var max_attack: int
 @export var speed: int

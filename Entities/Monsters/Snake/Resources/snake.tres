@@ -14,6 +14,7 @@ region = Rect2(39, 28, 52, 42)
 script = ExtResource("2_bgc5a")
 name = "Snake"
 faceset = SubResource("AtlasTexture_2akub")
+player_type = 1
 min_attack = 4
 max_attack = 6
 speed = 15

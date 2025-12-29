@@ -101,20 +101,17 @@ _data = {
 [node name="Brom" instance=ExtResource("1_dj73u")]
 info = ExtResource("2_1mgk0")
 
-[node name="Shadow" parent="." index="0"]
+[node name="Shadow" parent="." index="3"]
 scale = Vector2(5.25, 1.4375)
 texture = ExtResource("2_8pssm")
 
-[node name="Body" parent="." index="1"]
+[node name="Body" parent="." index="4"]
 position = Vector2(2, -47)
 texture = ExtResource("3_1mgk0")
 hframes = 6
 vframes = 5
 
-[node name="HeroesPosition" parent="." index="2"]
-position = Vector2(0, -32)
-
-[node name="AnimationPlayer" parent="." index="3"]
+[node name="AnimationPlayer" parent="." index="5"]
 libraries = {
 &"": SubResource("AnimationLibrary_khfmk")
 }

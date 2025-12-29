@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://iqkolg1441r5"]
+
+[ext_resource type="Script" uid="uid://by7tolk6knthk" path="res://Entities/Combattants/Scripts/actions.gd" id="1_y2p6g"]
+
+[node name="Action" type="Node"]
+script = ExtResource("1_y2p6g")
+
+[node name="Effects" type="Node" parent="."]

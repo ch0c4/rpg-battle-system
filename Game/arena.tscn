@@ -1,25 +1,28 @@
-[gd_scene format=3 uid="uid://b8hphdbgemuei"]
+[gd_scene load_steps=2 format=3 uid="uid://b8hphdbgemuei"]
+
+[ext_resource type="Script" uid="uid://cq8g6omo8vimu" path="res://Game/Scripts/arena.gd" id="1_qyws2"]
 
 [node name="Arena" type="Node2D"]
+script = ExtResource("1_qyws2")
 
 [node name="Heroes" type="Node2D" parent="."]
 
-[node name="Hero1" type="Marker2D" parent="Heroes"]
-position = Vector2(521, 271)
+[node name="HeroUp" type="Marker2D" parent="Heroes"]
+position = Vector2(530, 165)
 
-[node name="Hero2" type="Marker2D" parent="Heroes"]
+[node name="HeroCentral" type="Marker2D" parent="Heroes"]
 position = Vector2(466, 209)
 
-[node name="Hero3" type="Marker2D" parent="Heroes"]
-position = Vector2(530, 165)
+[node name="HeroDown" type="Marker2D" parent="Heroes"]
+position = Vector2(521, 271)
 
 [node name="Monsters" type="Node2D" parent="."]
 
-[node name="Monster1" type="Marker2D" parent="Monsters"]
-position = Vector2(140, 205)
-
-[node name="Monster2" type="Marker2D" parent="Monsters"]
+[node name="MonsterUp" type="Marker2D" parent="Monsters"]
 position = Vector2(87, 167)
 
-[node name="Monster3" type="Marker2D" parent="Monsters"]
+[node name="MonsterCentral" type="Marker2D" parent="Monsters"]
+position = Vector2(140, 205)
+
+[node name="MonsterDown" type="Marker2D" parent="Monsters"]
 position = Vector2(88, 265)

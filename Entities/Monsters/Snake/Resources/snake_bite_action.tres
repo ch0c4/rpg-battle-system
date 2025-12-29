@@ -11,5 +11,5 @@ animation = ExtResource("1_0paxo")
 name = "Bite"
 anim_name = &"bite"
 damage_percent = 60
-effect = Array[ExtResource("1_541o1")]([ExtResource("3_wtr5g")])
+effects = Array[ExtResource("1_541o1")]([ExtResource("3_wtr5g")])
 metadata/_custom_type_script = "uid://co57ijainkf2b"

@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://vyqg2m0rjhxi"]
 
-[ext_resource type="PackedScene" uid="uid://y4m2ue2r6e77" path="res://Entities/Effect/effect.tscn" id="1_7qnfg"]
+[ext_resource type="PackedScene" uid="uid://y4m2ue2r6e77" path="res://Entities/Effect/effect_animation.tscn" id="1_7qnfg"]
 [ext_resource type="Texture2D" uid="uid://bj0awqemfcv0s" path="res://Entities/Effect/Lightning/Assets/lightning_effect.png" id="2_yusth"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eyot1"]

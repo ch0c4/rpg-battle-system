@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://novxnddtfmby"]
 
-[ext_resource type="PackedScene" uid="uid://y4m2ue2r6e77" path="res://Entities/Effect/effect.tscn" id="1_5r73s"]
+[ext_resource type="PackedScene" uid="uid://y4m2ue2r6e77" path="res://Entities/Effect/effect_animation.tscn" id="1_5r73s"]
 [ext_resource type="Texture2D" uid="uid://by3jh2vbkrgwi" path="res://Entities/Effect/Poison/Assets/poison-effect.png" id="2_bke2w"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_w74f5"]

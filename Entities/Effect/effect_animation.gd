@@ -1,4 +1,4 @@
-class_name EffectScene extends Node2D
+class_name EffectAnimation extends Node2D
 
 signal animation_finished
 

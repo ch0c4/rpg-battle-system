@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://bf2wjrkkoiq3c"]
 
-[ext_resource type="PackedScene" uid="uid://y4m2ue2r6e77" path="res://Entities/Effect/effect.tscn" id="1_6vqlu"]
+[ext_resource type="PackedScene" uid="uid://y4m2ue2r6e77" path="res://Entities/Effect/effect_animation.tscn" id="1_6vqlu"]
 [ext_resource type="Texture2D" uid="uid://ck1ymb8hjh8u2" path="res://Entities/Effect/Wind/Assets/wind_effect.png" id="2_b0wf4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n3vye"]

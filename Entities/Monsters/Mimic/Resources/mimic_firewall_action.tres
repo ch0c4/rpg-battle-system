@@ -12,5 +12,5 @@ name = "Firewall"
 anim_name = &"firewall"
 damage_percent = 80
 target = 2
-effect = Array[ExtResource("1_4rkb2")]([ExtResource("3_ul3qi")])
+effects = Array[ExtResource("1_4rkb2")]([ExtResource("3_ul3qi")])
 metadata/_custom_type_script = "uid://co57ijainkf2b"

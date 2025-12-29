@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://drhbqt0jqpu5p"]
+
+[ext_resource type="Script" uid="uid://dseg35rqqvp11" path="res://Entities/Combattants/Scripts/status.gd" id="1_mmdkc"]
+
+[node name="Status" type="Node"]
+script = ExtResource("1_mmdkc")
