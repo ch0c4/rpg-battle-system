@@ -283,19 +283,19 @@ _data = {
 [node name="Elowen" instance=ExtResource("1_3xmst")]
 info = ExtResource("2_gkrwl")
 
-[node name="Shadow" parent="." index="0"]
+[node name="ArrowDown" parent="." index="3"]
+position = Vector2(0, -104)
+
+[node name="Shadow" parent="." index="4"]
 scale = Vector2(5.3125, 1.3125)
 texture = ExtResource("2_xbl8v")
 
-[node name="Body" parent="." index="1"]
+[node name="Body" parent="." index="5"]
 position = Vector2(-23, -45)
 texture = ExtResource("4_xbl8v")
 hframes = 6
 
-[node name="HeroesPosition" parent="." index="2"]
-position = Vector2(0, -32)
-
-[node name="AnimationPlayer" parent="." index="3"]
+[node name="AnimationPlayer" parent="." index="6"]
 libraries = {
 &"": SubResource("AnimationLibrary_2leso")
 }

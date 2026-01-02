@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0rc2t6ppwd7k"
-path="res://.godot/imported/vaelis-faceset.png-467533544b507c37aac0873ce18d9455.ctex"
+uid="uid://c6ccpygam5ep6"
+path="res://.godot/imported/select_nine_path_panel.png-7f0fc5a6a874c68e1c86ec5ad4c2e452.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entities/Heroes/Vaelis/Assets/vaelis-faceset.png"
-dest_files=["res://.godot/imported/vaelis-faceset.png-467533544b507c37aac0873ce18d9455.ctex"]
+source_file="res://HUD/Menu/Assets/select_nine_path_panel.png"
+dest_files=["res://.godot/imported/select_nine_path_panel.png-7f0fc5a6a874c68e1c86ec5ad4c2e452.ctex"]
 
 [params]
 

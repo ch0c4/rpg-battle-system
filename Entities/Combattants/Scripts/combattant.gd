@@ -4,9 +4,9 @@ signal combattant_hp_changed(current_hp: int, max_hp: int)
 signal status_changed
 signal buff_changed
 
-var status_reference: PackedScene = load("res://Entities/Stats/status.tscn")
-var action_reference: PackedScene = load("res://Entities/Stats/action.tscn")
-var buffs_reference: PackedScene = load("res://Entities/Stats/buffs.tscn")
+var status_reference: PackedScene = load("res://Entities/Combattants/status.tscn")
+var action_reference: PackedScene = load("res://Entities/Combattants/action.tscn")
+var buffs_reference: PackedScene = load("res://Entities/Combattants/buffs.tscn")
 
 @export var info: Fighter
 
@@ -15,6 +15,7 @@ var buffs_reference: PackedScene = load("res://Entities/Stats/buffs.tscn")
 @onready var actions: Node = $Actions
 @onready var status: Node = $Status
 @onready var buffs: Node = $Buffs
+@onready var arrow_down: Node2D = $ArrowDown
 
 var combattant_name: String
 var faceset: Texture2D
@@ -38,6 +39,7 @@ var fixed_position := Vector2.ZERO
 func _ready() -> void:
 	animation_player.animation_finished.connect(_on_animation_finished)
 	fixed_position = shadow.position
+	unselect()
 	
 	combattant_name = info.name
 	faceset = info.faceset
@@ -59,8 +61,16 @@ func _on_animation_finished(_anim_name: StringName) -> void:
 	animation_player.play("idle")
 
 
+func select() -> void:
+	arrow_down.show()
+
+
+func unselect() -> void:
+	arrow_down.hide()
+
+
 func get_initiative() -> int:
-	return (randi() % 6 + 1) + info.speed
+	return info.get_initiative()
 
 
 func get_actions() -> Array:

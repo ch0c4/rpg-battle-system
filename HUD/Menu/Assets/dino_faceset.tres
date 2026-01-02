@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://c7ydttbs2teum"]
+
+[ext_resource type="Texture2D" uid="uid://2njruhgids5o" path="res://Entities/Monsters/Dino/Assets/dino-spritesheet.png" id="1_ujr2c"]
+
+[resource]
+atlas = ExtResource("1_ujr2c")
+region = Rect2(60, 57, 62, 59)

@@ -1,8 +1,6 @@
 class_name Actions extends Node
 
-@onready var effect_node: Node = $Effects
-
-var effect_reference := load("res://Entities/Stats/effects.tscn")
+var effect_reference := load("res://Entities/Combattants/effects.tscn")
 
 var icon: Texture2D
 var action_name := "Missing string"
@@ -30,8 +28,8 @@ func create(data: Action) -> void:
 		for effect in data.effects:
 			var new_effect: Node = effect_reference.instantiate()
 			new_effect.create(effect)
-			effect_node.add_child(new_effect)
+			$Effects.add_child(new_effect)
 
 
 func get_effects() -> Array:
-	return effect_node.get_children()
+	return $Effects.get_children()

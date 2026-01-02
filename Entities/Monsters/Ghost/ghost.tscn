@@ -101,20 +101,20 @@ _data = {
 [node name="Ghost" instance=ExtResource("1_jafsk")]
 info = ExtResource("2_ejp8y")
 
-[node name="Shadow" parent="." index="0"]
+[node name="ArrowDown" parent="." index="3"]
+position = Vector2(0, -120)
+
+[node name="Shadow" parent="." index="4"]
 scale = Vector2(4.1875, 1.4375)
 texture = ExtResource("2_x4lsy")
 
-[node name="Body" parent="." index="1"]
+[node name="Body" parent="." index="5"]
 position = Vector2(3, -56)
 texture = ExtResource("3_ejp8y")
 hframes = 6
 vframes = 5
 
-[node name="MonsterPosition" parent="." index="2"]
-position = Vector2(0, -16)
-
-[node name="AnimationPlayer" parent="." index="3"]
+[node name="AnimationPlayer" parent="." index="6"]
 libraries = {
 &"": SubResource("AnimationLibrary_ig2r5")
 }

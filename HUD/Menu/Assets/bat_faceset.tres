@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://bu0h0t3rfm74i"]
+
+[ext_resource type="Texture2D" uid="uid://bo48krsj8qb20" path="res://Entities/Monsters/Bat/Assets/bat-spritesheet.png" id="1_tdclk"]
+
+[resource]
+atlas = ExtResource("1_tdclk")
+region = Rect2(43, 24, 45, 51)

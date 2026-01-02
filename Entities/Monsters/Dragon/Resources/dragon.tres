@@ -1,19 +1,15 @@
-[gd_resource type="Resource" script_class="Fighter" load_steps=7 format=3 uid="uid://bpts1ekoywn57"]
+[gd_resource type="Resource" script_class="Fighter" load_steps=6 format=3 uid="uid://bpts1ekoywn57"]
 
 [ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="1_74npb"]
 [ext_resource type="Script" uid="uid://c41kfduj2siwv" path="res://Scripts/Resources/fighter.gd" id="2_4lnpt"]
 [ext_resource type="Resource" uid="uid://c7rxc781ge47m" path="res://Entities/Monsters/Dragon/Resources/dragon_punch_action.tres" id="2_e28a4"]
 [ext_resource type="Resource" uid="uid://w36bukn4thbt" path="res://Entities/Monsters/Dragon/Resources/dragon_fireball_action.tres" id="3_bvo0u"]
-[ext_resource type="Texture2D" uid="uid://cgadiak10eold" path="res://Entities/Monsters/Dragon/Assets/dragon-spritesheet.png" id="5_mfx7b"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_53ai2"]
-atlas = ExtResource("5_mfx7b")
-region = Rect2(93, 56, 105, 75)
+[ext_resource type="Texture2D" uid="uid://4mt1r201qquv" path="res://HUD/Menu/Assets/dragon_faceset.tres" id="4_e28a4"]
 
 [resource]
 script = ExtResource("2_4lnpt")
 name = "Dragon"
-faceset = SubResource("AtlasTexture_53ai2")
+faceset = ExtResource("4_e28a4")
 player_type = 1
 min_attack = 14
 max_attack = 20

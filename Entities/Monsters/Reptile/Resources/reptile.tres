@@ -1,19 +1,15 @@
-[gd_resource type="Resource" script_class="Fighter" load_steps=7 format=3 uid="uid://b7p3fa43jmvbq"]
+[gd_resource type="Resource" script_class="Fighter" load_steps=6 format=3 uid="uid://b7p3fa43jmvbq"]
 
 [ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="1_5vlah"]
 [ext_resource type="Script" uid="uid://c41kfduj2siwv" path="res://Scripts/Resources/fighter.gd" id="2_2vhad"]
 [ext_resource type="Resource" uid="uid://dl40g60eon2yj" path="res://Entities/Monsters/Reptile/Resources/reptile_attack_action.tres" id="2_phhwl"]
 [ext_resource type="Resource" uid="uid://dls6ehdfi6ppy" path="res://Entities/Monsters/Reptile/Resources/reptile_guard_action.tres" id="3_gxo5v"]
-[ext_resource type="Texture2D" uid="uid://0t4i4oxfpso2" path="res://Entities/Monsters/Reptile/Assets/reptile-spritesheet.png" id="4_14mts"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_w208l"]
-atlas = ExtResource("4_14mts")
-region = Rect2(78, 28, 65, 56)
+[ext_resource type="Texture2D" uid="uid://1fl66x75cqlq" path="res://HUD/Menu/Assets/reptile_faceset.tres" id="4_phhwl"]
 
 [resource]
 script = ExtResource("2_2vhad")
 name = "Reptile"
-faceset = SubResource("AtlasTexture_w208l")
+faceset = ExtResource("4_phhwl")
 player_type = 1
 min_attack = 6
 max_attack = 9

@@ -10,8 +10,11 @@ var icon_texture: Texture2D
 
 
 func create(data: StatusPojo) -> void:
-	pass
-
+	status_name = data.status_name
+	status_type = data.status_type
+	amount = data.amount
+	turn_duration = data.turn_duration
+	icon_texture = data.icon_texture
 
 
 class StatusPojo:

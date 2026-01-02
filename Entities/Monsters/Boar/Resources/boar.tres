@@ -1,19 +1,15 @@
-[gd_resource type="Resource" script_class="Fighter" load_steps=7 format=3 uid="uid://ctqnt11b2y5ey"]
+[gd_resource type="Resource" script_class="Fighter" load_steps=6 format=3 uid="uid://ctqnt11b2y5ey"]
 
 [ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="1_tcpoo"]
 [ext_resource type="Resource" uid="uid://drwa8a0hu10si" path="res://Entities/Monsters/Boar/Resources/boar_charge_action.tres" id="2_gjqt7"]
 [ext_resource type="Script" uid="uid://c41kfduj2siwv" path="res://Scripts/Resources/fighter.gd" id="2_xvahp"]
 [ext_resource type="Resource" uid="uid://khm0n6gxmekk" path="res://Entities/Monsters/Boar/Resources/boar_roll_action.tres" id="3_248af"]
-[ext_resource type="Texture2D" uid="uid://672nmov8mtig" path="res://Entities/Monsters/Boar/Assets/boar-spritesheet.png" id="3_j8gdg"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3xmej"]
-atlas = ExtResource("3_j8gdg")
-region = Rect2(105, 73, 83, 99)
+[ext_resource type="Texture2D" uid="uid://cf3wiu71h2beg" path="res://HUD/Menu/Assets/boar_faceset.tres" id="4_gjqt7"]
 
 [resource]
 script = ExtResource("2_xvahp")
 name = "Boar"
-faceset = SubResource("AtlasTexture_3xmej")
+faceset = ExtResource("4_gjqt7")
 player_type = 1
 min_attack = 6
 max_attack = 9

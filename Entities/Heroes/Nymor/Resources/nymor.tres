@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://c41kfduj2siwv" path="res://Scripts/Resources/fighter.gd" id="2_elels"]
 [ext_resource type="Resource" uid="uid://bd4bpsx3y7n07" path="res://Entities/Heroes/Nymor/Resources/nymor_attack_action.tres" id="2_xk4gn"]
 [ext_resource type="Resource" uid="uid://djdejflsa2lnc" path="res://Entities/Heroes/Nymor/Resources/nymor_heal_action.tres" id="3_m75om"]
-[ext_resource type="Texture2D" uid="uid://dmui43iyehfgq" path="res://Entities/Heroes/Nymor/Assets/nymor-faceset.png" id="6_waumd"]
+[ext_resource type="Texture2D" uid="uid://dmui43iyehfgq" path="res://HUD/Menu/Assets/nymor-faceset.png" id="6_waumd"]
 
 [resource]
 script = ExtResource("2_elels")

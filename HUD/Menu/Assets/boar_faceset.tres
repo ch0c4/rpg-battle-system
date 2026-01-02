@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://cf3wiu71h2beg"]
+
+[ext_resource type="Texture2D" uid="uid://672nmov8mtig" path="res://Entities/Monsters/Boar/Assets/boar-spritesheet.png" id="1_yij5f"]
+
+[resource]
+atlas = ExtResource("1_yij5f")
+region = Rect2(105, 73, 83, 99)

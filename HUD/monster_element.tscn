@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://g6scool7u2n4"]
+
+[ext_resource type="Script" uid="uid://cjm15djs66u18" path="res://HUD/Scripts/monster_element.gd" id="1_6d6ye"]
+[ext_resource type="Texture2D" uid="uid://vgb5sxthsbly" path="res://HUD/Assets/arrow-right.png" id="1_8hdix"]
+
+[node name="MonsterElement" type="MarginContainer"]
+script = ExtResource("1_6d6ye")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TextureButton" type="TextureButton" parent="HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_8hdix")
+stretch_mode = 3
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Bat"
+vertical_alignment = 1

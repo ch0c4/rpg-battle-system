@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://doviw3votw2lw"]
+
+[ext_resource type="Texture2D" uid="uid://dwn4ek2id62gk" path="res://Entities/Monsters/Slime/Assets/slime-spritesheet.png" id="1_04g2f"]
+
+[resource]
+atlas = ExtResource("1_04g2f")
+region = Rect2(26, 42, 52, 56)

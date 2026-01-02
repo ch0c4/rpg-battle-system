@@ -229,19 +229,19 @@ _data = {
 [node name="Vaelis" instance=ExtResource("1_3j7qs")]
 info = ExtResource("2_vnbd2")
 
-[node name="Shadow" parent="." index="0"]
+[node name="ArrowDown" parent="." index="3"]
+position = Vector2(0, -112)
+
+[node name="Shadow" parent="." index="4"]
 scale = Vector2(4.6875, 1.25)
 texture = ExtResource("2_lvn7a")
 
-[node name="Body" parent="." index="1"]
+[node name="Body" parent="." index="5"]
 position = Vector2(3, -45)
 texture = ExtResource("4_vnbd2")
 hframes = 6
 
-[node name="HeroesPosition" parent="." index="2"]
-position = Vector2(0, -32)
-
-[node name="AnimationPlayer" parent="." index="3"]
+[node name="AnimationPlayer" parent="." index="6"]
 libraries = {
 &"": SubResource("AnimationLibrary_cmscw")
 }

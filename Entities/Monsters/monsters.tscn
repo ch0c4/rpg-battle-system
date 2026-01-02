@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://ddj1utq7c4jr5"]
+[gd_scene load_steps=6 format=3 uid="uid://ddj1utq7c4jr5"]
 
 [ext_resource type="Script" uid="uid://dd17lp3n2sref" path="res://Entities/Monsters/monsters.gd" id="1_wjxvl"]
 [ext_resource type="Script" uid="uid://by7tolk6knthk" path="res://Entities/Combattants/Scripts/actions.gd" id="2_est3o"]
 [ext_resource type="Script" uid="uid://dseg35rqqvp11" path="res://Entities/Combattants/Scripts/status.gd" id="3_ekt5b"]
 [ext_resource type="Script" uid="uid://mwf77rhm64og" path="res://Entities/Combattants/Scripts/buffs.gd" id="4_7wavr"]
+[ext_resource type="PackedScene" uid="uid://b80sn8e4kbd3s" path="res://Entities/ArrowDown/arrow_down.tscn" id="5_sfrol"]
 
 [node name="Monsters" type="Node2D"]
 script = ExtResource("1_wjxvl")
@@ -16,6 +17,8 @@ script = ExtResource("3_ekt5b")
 
 [node name="Buffs" type="Node" parent="."]
 script = ExtResource("4_7wavr")
+
+[node name="ArrowDown" parent="." instance=ExtResource("5_sfrol")]
 
 [node name="Shadow" type="Sprite2D" parent="."]
 

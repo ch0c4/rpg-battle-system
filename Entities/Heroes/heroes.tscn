@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cdj7ta2ijlg3h"]
+[gd_scene load_steps=3 format=3 uid="uid://cdj7ta2ijlg3h"]
 
 [ext_resource type="Script" uid="uid://1w0en5g8h8jq" path="res://Entities/Heroes/heroes.gd" id="1_owxrn"]
+[ext_resource type="PackedScene" uid="uid://b80sn8e4kbd3s" path="res://Entities/ArrowDown/arrow_down.tscn" id="2_bbxnh"]
 
 [node name="Heroes" type="Node2D"]
 script = ExtResource("1_owxrn")
@@ -10,6 +11,8 @@ script = ExtResource("1_owxrn")
 [node name="Status" type="Node" parent="."]
 
 [node name="Buffs" type="Node" parent="."]
+
+[node name="ArrowDown" parent="." instance=ExtResource("2_bbxnh")]
 
 [node name="Shadow" type="Sprite2D" parent="."]
 

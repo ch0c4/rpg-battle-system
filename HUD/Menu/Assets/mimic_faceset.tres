@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://bxjrrt7oxojsm"]
+
+[ext_resource type="Texture2D" uid="uid://cosbn8smwi0mx" path="res://Entities/Monsters/Mimic/Assets/mimic-spritesheet.png" id="1_lsmln"]
+
+[resource]
+atlas = ExtResource("1_lsmln")
+region = Rect2(36, 63, 127, 89)

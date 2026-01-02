@@ -1,19 +1,15 @@
-[gd_resource type="Resource" script_class="Fighter" load_steps=7 format=3 uid="uid://xe723mnfo77x"]
+[gd_resource type="Resource" script_class="Fighter" load_steps=6 format=3 uid="uid://xe723mnfo77x"]
 
 [ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="1_ydrub"]
 [ext_resource type="Script" uid="uid://c41kfduj2siwv" path="res://Scripts/Resources/fighter.gd" id="2_bgc5a"]
-[ext_resource type="Texture2D" uid="uid://mtw3nu2ga1vu" path="res://Entities/Monsters/Snake/Assets/snake-spritesheet.png" id="2_gacqy"]
 [ext_resource type="Resource" uid="uid://d0wwixojmtakl" path="res://Entities/Monsters/Snake/Resources/snake_bite_action.tres" id="2_kbclp"]
 [ext_resource type="Resource" uid="uid://bt5vks2t88d8p" path="res://Entities/Monsters/Snake/Resources/snake_roar_action.tres" id="3_40x8s"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2akub"]
-atlas = ExtResource("2_gacqy")
-region = Rect2(39, 28, 52, 42)
+[ext_resource type="Texture2D" uid="uid://d4ndss65ntfai" path="res://HUD/Menu/Assets/snake_faceset.tres" id="4_kbclp"]
 
 [resource]
 script = ExtResource("2_bgc5a")
 name = "Snake"
-faceset = SubResource("AtlasTexture_2akub")
+faceset = ExtResource("4_kbclp")
 player_type = 1
 min_attack = 4
 max_attack = 6

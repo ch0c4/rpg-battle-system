@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="1_38u5g"]
 [ext_resource type="Script" uid="uid://c41kfduj2siwv" path="res://Scripts/Resources/fighter.gd" id="2_16fnx"]
-[ext_resource type="Texture2D" uid="uid://b6uv6sehg02pm" path="res://Entities/Heroes/Brom/Assets/brom-faceset.png" id="2_hl3hx"]
+[ext_resource type="Texture2D" uid="uid://b6uv6sehg02pm" path="res://HUD/Menu/Assets/brom-faceset.png" id="2_hl3hx"]
 [ext_resource type="Resource" uid="uid://cfl4q2jbifgch" path="res://Entities/Heroes/Brom/Resources/brom_attack_action.tres" id="2_xcml3"]
 [ext_resource type="Resource" uid="uid://cxk3nkyo6g2q5" path="res://Entities/Heroes/Brom/Resources/brom_guard_action.tres" id="3_2yyq5"]
 

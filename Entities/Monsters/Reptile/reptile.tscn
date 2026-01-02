@@ -101,21 +101,21 @@ _data = {
 [node name="Reptile" instance=ExtResource("1_sjcim")]
 info = ExtResource("2_ivoqo")
 
-[node name="Shadow" parent="." index="0"]
+[node name="ArrowDown" parent="." index="3"]
+position = Vector2(0, -128)
+
+[node name="Shadow" parent="." index="4"]
 position = Vector2(-5.9999943, -2.4999995)
 scale = Vector2(7.3749995, 1.4375)
 texture = ExtResource("2_4xx13")
 
-[node name="Body" parent="." index="1"]
+[node name="Body" parent="." index="5"]
 position = Vector2(20, -73)
 texture = ExtResource("3_ivoqo")
 hframes = 5
 vframes = 3
 
-[node name="MonsterPosition" parent="." index="2"]
-position = Vector2(0, -24)
-
-[node name="AnimationPlayer" parent="." index="3"]
+[node name="AnimationPlayer" parent="." index="6"]
 libraries = {
 &"": SubResource("AnimationLibrary_o4hdo")
 }

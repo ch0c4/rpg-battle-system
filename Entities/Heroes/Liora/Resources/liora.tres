@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://c41kfduj2siwv" path="res://Scripts/Resources/fighter.gd" id="2_6sqoh"]
 [ext_resource type="Resource" uid="uid://c10lkce4wmvei" path="res://Entities/Heroes/Liora/Resources/liora_attack_action.tres" id="2_g6m67"]
 [ext_resource type="Resource" uid="uid://cn7ek3qqr3a4h" path="res://Entities/Heroes/Liora/Resources/liora_stun_attack_action.tres" id="3_73su8"]
-[ext_resource type="Texture2D" uid="uid://biwfv3mjy0on4" path="res://Entities/Heroes/Liora/Assets/liora-faceset.png" id="4_g6m67"]
+[ext_resource type="Texture2D" uid="uid://biwfv3mjy0on4" path="res://HUD/Menu/Assets/liora-faceset.png" id="4_g6m67"]
 
 [resource]
 script = ExtResource("2_6sqoh")

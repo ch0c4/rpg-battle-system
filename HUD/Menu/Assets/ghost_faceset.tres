@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://bj442d13u1ukp"]
+
+[ext_resource type="Texture2D" uid="uid://dvsr0l0qa13b5" path="res://Entities/Monsters/Ghost/Assets/ghost-spritesheet.png" id="1_1gips"]
+
+[resource]
+atlas = ExtResource("1_1gips")
+region = Rect2(14, 4, 84, 70)

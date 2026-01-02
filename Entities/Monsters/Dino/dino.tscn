@@ -101,20 +101,20 @@ _data = {
 [node name="Dino" instance=ExtResource("1_4bgn6")]
 info = ExtResource("2_mdjut")
 
-[node name="Shadow" parent="." index="0"]
+[node name="ArrowDown" parent="." index="3"]
+position = Vector2(0, -80)
+
+[node name="Shadow" parent="." index="4"]
 scale = Vector2(6.6249995, 1)
 texture = ExtResource("2_v5c03")
 
-[node name="Body" parent="." index="1"]
+[node name="Body" parent="." index="5"]
 position = Vector2(8, -54)
 texture = ExtResource("3_xurc8")
 hframes = 5
 vframes = 4
 
-[node name="MonsterPosition" parent="." index="2"]
-position = Vector2(0, -16)
-
-[node name="AnimationPlayer" parent="." index="3"]
+[node name="AnimationPlayer" parent="." index="6"]
 libraries = {
 &"": SubResource("AnimationLibrary_k06qg")
 }

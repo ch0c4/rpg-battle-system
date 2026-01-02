@@ -1,19 +1,15 @@
-[gd_resource type="Resource" script_class="Fighter" load_steps=7 format=3 uid="uid://c6jyfbgv3kbm3"]
+[gd_resource type="Resource" script_class="Fighter" load_steps=6 format=3 uid="uid://c6jyfbgv3kbm3"]
 
 [ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="1_s6vo0"]
 [ext_resource type="Resource" uid="uid://btb8brcpt1tsd" path="res://Entities/Monsters/Mimic/Resources/mimic_attack_action.tres" id="2_c6om8"]
 [ext_resource type="Resource" uid="uid://crevvks6fj5od" path="res://Entities/Monsters/Mimic/Resources/mimic_firewall_action.tres" id="3_jqvfd"]
-[ext_resource type="Texture2D" uid="uid://cosbn8smwi0mx" path="res://Entities/Monsters/Mimic/Assets/mimic-spritesheet.png" id="4_crr46"]
+[ext_resource type="Texture2D" uid="uid://bxjrrt7oxojsm" path="res://HUD/Menu/Assets/mimic_faceset.tres" id="4_c6om8"]
 [ext_resource type="Script" uid="uid://c41kfduj2siwv" path="res://Scripts/Resources/fighter.gd" id="5_omqir"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_fibkx"]
-atlas = ExtResource("4_crr46")
-region = Rect2(36, 63, 127, 89)
 
 [resource]
 script = ExtResource("5_omqir")
 name = "Mimic"
-faceset = SubResource("AtlasTexture_fibkx")
+faceset = ExtResource("4_c6om8")
 player_type = 1
 min_attack = 7
 max_attack = 11

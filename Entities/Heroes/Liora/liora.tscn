@@ -283,19 +283,19 @@ _data = {
 [node name="Liora" instance=ExtResource("1_xt52b")]
 info = ExtResource("2_xs5rf")
 
-[node name="Shadow" parent="." index="0"]
+[node name="ArrowDown" parent="." index="3"]
+position = Vector2(0, -96)
+
+[node name="Shadow" parent="." index="4"]
 scale = Vector2(5.3125, 1.25)
 texture = ExtResource("2_revnd")
 
-[node name="Body" parent="." index="1"]
+[node name="Body" parent="." index="5"]
 position = Vector2(-3, -55)
 texture = ExtResource("4_revnd")
 hframes = 8
 
-[node name="HeroesPosition" parent="." index="2"]
-position = Vector2(0, -32)
-
-[node name="AnimationPlayer" parent="." index="3"]
+[node name="AnimationPlayer" parent="." index="6"]
 libraries = {
 &"": SubResource("AnimationLibrary_xs5rf")
 }

@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://dipx21chwrul4"]
+
+[ext_resource type="Texture2D" uid="uid://vgb5sxthsbly" path="res://HUD/Assets/arrow-right.png" id="1_d6rua"]
+[ext_resource type="Script" uid="uid://ccdrg6cl6x5uw" path="res://HUD/Scripts/hero_element.gd" id="1_ngd6o"]
+
+[node name="HeroElement" type="MarginContainer"]
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 4
+script = ExtResource("1_ngd6o")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 5.0
+texture_normal = ExtResource("1_d6rua")
+stretch_mode = 3
+
+[node name="HeroName" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 40.0
+text = "Elowen"
+
+[node name="CurrentHP" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 15.0
+text = "123/"
+
+[node name="MaxHP" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 20.0
+text = "123"
+
+[node name="Mana" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 5.0
+text = "80"
+horizontal_alignment = 2

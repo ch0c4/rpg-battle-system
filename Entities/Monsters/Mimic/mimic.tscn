@@ -101,20 +101,20 @@ _data = {
 [node name="Mimic" instance=ExtResource("1_4a8kk")]
 info = ExtResource("2_0ri6x")
 
-[node name="Shadow" parent="." index="0"]
+[node name="ArrowDown" parent="." index="3"]
+position = Vector2(0, -128)
+
+[node name="Shadow" parent="." index="4"]
 scale = Vector2(7.5625005, 2.25)
 texture = ExtResource("2_7mxxx")
 
-[node name="Body" parent="." index="1"]
+[node name="Body" parent="." index="5"]
 position = Vector2(19, -81)
 texture = ExtResource("3_0ri6x")
 hframes = 6
 vframes = 5
 
-[node name="MonsterPosition" parent="." index="2"]
-position = Vector2(0, -24)
-
-[node name="AnimationPlayer" parent="." index="3"]
+[node name="AnimationPlayer" parent="." index="6"]
 libraries = {
 &"": SubResource("AnimationLibrary_edtno")
 }

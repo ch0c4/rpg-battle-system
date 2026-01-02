@@ -83,20 +83,20 @@ _data = {
 [node name="Dragon" instance=ExtResource("1_121uc")]
 info = ExtResource("2_inqe4")
 
-[node name="Shadow" parent="." index="0"]
+[node name="ArrowDown" parent="." index="3"]
+position = Vector2(0, -176)
+
+[node name="Shadow" parent="." index="4"]
 scale = Vector2(11.5, 3.625)
 texture = ExtResource("2_6wkpt")
 
-[node name="Body" parent="." index="1"]
+[node name="Body" parent="." index="5"]
 position = Vector2(12, -91)
 texture = ExtResource("3_4uyav")
 hframes = 5
 vframes = 5
 
-[node name="MonsterPosition" parent="." index="2"]
-position = Vector2(0, -32)
-
-[node name="AnimationPlayer" parent="." index="3"]
+[node name="AnimationPlayer" parent="." index="6"]
 libraries = {
 &"": SubResource("AnimationLibrary_lyiq4")
 }

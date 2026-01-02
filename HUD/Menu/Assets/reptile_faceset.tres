@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://1fl66x75cqlq"]
+
+[ext_resource type="Texture2D" uid="uid://0t4i4oxfpso2" path="res://Entities/Monsters/Reptile/Assets/reptile-spritesheet.png" id="1_0b5td"]
+
+[resource]
+atlas = ExtResource("1_0b5td")
+region = Rect2(78, 28, 65, 56)

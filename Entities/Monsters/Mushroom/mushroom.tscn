@@ -101,20 +101,20 @@ _data = {
 [node name="Mushroom" instance=ExtResource("1_g5d17")]
 info = ExtResource("2_sbxj1")
 
-[node name="Shadow" parent="." index="0"]
+[node name="ArrowDown" parent="." index="3"]
+position = Vector2(0, -104)
+
+[node name="Shadow" parent="." index="4"]
 scale = Vector2(7, 1.625)
 texture = ExtResource("2_umbyt")
 
-[node name="Body" parent="." index="1"]
+[node name="Body" parent="." index="5"]
 position = Vector2(1, -65)
 texture = ExtResource("3_sbxj1")
 hframes = 5
 vframes = 7
 
-[node name="MonsterPosition" parent="." index="2"]
-position = Vector2(0, -16)
-
-[node name="AnimationPlayer" parent="." index="3"]
+[node name="AnimationPlayer" parent="." index="6"]
 libraries = {
 &"": SubResource("AnimationLibrary_ka38h")
 }

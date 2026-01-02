@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmui43iyehfgq"
-path="res://.godot/imported/nymor-faceset.png-766f8c8ef8429aa4c7177d19ed81a49e.ctex"
+uid="uid://b6uv6sehg02pm"
+path="res://.godot/imported/brom-faceset.png-f3fb7c6f6ac7b44e23c84a81bd978f12.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entities/Heroes/Nymor/Assets/nymor-faceset.png"
-dest_files=["res://.godot/imported/nymor-faceset.png-766f8c8ef8429aa4c7177d19ed81a49e.ctex"]
+source_file="res://HUD/Menu/Assets/brom-faceset.png"
+dest_files=["res://.godot/imported/brom-faceset.png-f3fb7c6f6ac7b44e23c84a81bd978f12.ctex"]
 
 [params]
 

@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://4mt1r201qquv"]
+
+[ext_resource type="Texture2D" uid="uid://cgadiak10eold" path="res://Entities/Monsters/Dragon/Assets/dragon-spritesheet.png" id="1_qxwl7"]
+
+[resource]
+atlas = ExtResource("1_qxwl7")
+region = Rect2(93, 56, 105, 75)

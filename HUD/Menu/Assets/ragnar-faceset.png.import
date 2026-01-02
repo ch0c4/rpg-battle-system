@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://biwfv3mjy0on4"
-path="res://.godot/imported/liora-faceset.png-67cf73b92484eb44298ebebc218d32fe.ctex"
+uid="uid://brqkx3lbdl7ry"
+path="res://.godot/imported/ragnar-faceset.png-c24eb47dd55d3bc8d1c29417065596f7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entities/Heroes/Liora/Assets/liora-faceset.png"
-dest_files=["res://.godot/imported/liora-faceset.png-67cf73b92484eb44298ebebc218d32fe.ctex"]
+source_file="res://HUD/Menu/Assets/ragnar-faceset.png"
+dest_files=["res://.godot/imported/ragnar-faceset.png-c24eb47dd55d3bc8d1c29417065596f7.ctex"]
 
 [params]
 

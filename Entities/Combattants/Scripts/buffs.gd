@@ -77,6 +77,7 @@ class BuffPojo:
 	
 	static func of(_stat_type: Constants.StatType, _buff_type: Constants.BuffType, _buff_amount_type: Constants.BuffAmountType, _amount: int, _turn_duration: int, _animation: PackedScene, _icon_texture: Texture2D) -> BuffPojo:
 		var b: BuffPojo = BuffPojo.new()
+		
 		b.stat_type = _stat_type
 		b.buff_type = _buff_type
 		b.buff_amount_type = _buff_amount_type

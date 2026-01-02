@@ -4,7 +4,7 @@
 [ext_resource type="Resource" uid="uid://bgqkpter21w2s" path="res://Entities/Heroes/Ragnar/Resources/ragnar_attack_action.tres" id="2_6utwy"]
 [ext_resource type="Script" uid="uid://c41kfduj2siwv" path="res://Scripts/Resources/fighter.gd" id="2_jr3p5"]
 [ext_resource type="Resource" uid="uid://ciy0if6s5cmhb" path="res://Entities/Heroes/Ragnar/Resources/ragnar_guard_action.tres" id="3_xbesc"]
-[ext_resource type="Texture2D" uid="uid://brqkx3lbdl7ry" path="res://Entities/Heroes/Ragnar/Assets/ragnar-faceset.png" id="5_xbesc"]
+[ext_resource type="Texture2D" uid="uid://brqkx3lbdl7ry" path="res://HUD/Menu/Assets/ragnar-faceset.png" id="5_xbesc"]
 
 [resource]
 script = ExtResource("2_jr3p5")

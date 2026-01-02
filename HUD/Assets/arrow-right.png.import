@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6uv6sehg02pm"
-path="res://.godot/imported/brom-faceset.png-7b3d13503bf78a82d83cb4a07af4b635.ctex"
+uid="uid://vgb5sxthsbly"
+path="res://.godot/imported/arrow-right.png-d58f9effc01c08fdce61122bf16de0b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entities/Heroes/Brom/Assets/brom-faceset.png"
-dest_files=["res://.godot/imported/brom-faceset.png-7b3d13503bf78a82d83cb4a07af4b635.ctex"]
+source_file="res://HUD/Assets/arrow-right.png"
+dest_files=["res://.godot/imported/arrow-right.png-d58f9effc01c08fdce61122bf16de0b2.ctex"]
 
 [params]
 

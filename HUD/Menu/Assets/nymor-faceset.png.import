@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brqkx3lbdl7ry"
-path="res://.godot/imported/ragnar-faceset.png-01511d90ceec6fc127c6738f0843d6e0.ctex"
+uid="uid://dmui43iyehfgq"
+path="res://.godot/imported/nymor-faceset.png-62e3c7dd57b882ee7279916b31fc502d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entities/Heroes/Ragnar/Assets/ragnar-faceset.png"
-dest_files=["res://.godot/imported/ragnar-faceset.png-01511d90ceec6fc127c6738f0843d6e0.ctex"]
+source_file="res://HUD/Menu/Assets/nymor-faceset.png"
+dest_files=["res://.godot/imported/nymor-faceset.png-62e3c7dd57b882ee7279916b31fc502d.ctex"]
 
 [params]
 

@@ -101,20 +101,20 @@ _data = {
 [node name="Giant" instance=ExtResource("1_54qdl")]
 info = ExtResource("2_m0vx2")
 
-[node name="Shadow" parent="." index="0"]
+[node name="ArrowDown" parent="." index="3"]
+position = Vector2(16, -168)
+
+[node name="Shadow" parent="." index="4"]
 scale = Vector2(15.437501, 3.375)
 texture = ExtResource("2_jpv5n")
 
-[node name="Body" parent="." index="1"]
+[node name="Body" parent="." index="5"]
 position = Vector2(20, -150)
 texture = ExtResource("3_m0vx2")
 hframes = 8
 vframes = 4
 
-[node name="MonsterPosition" parent="." index="2"]
-position = Vector2(0, -32)
-
-[node name="AnimationPlayer" parent="." index="3"]
+[node name="AnimationPlayer" parent="." index="6"]
 libraries = {
 &"": SubResource("AnimationLibrary_py8f4")
 }

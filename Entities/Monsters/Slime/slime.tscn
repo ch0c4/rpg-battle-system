@@ -101,20 +101,20 @@ _data = {
 [node name="Slime" instance=ExtResource("1_6m768")]
 info = ExtResource("2_2aouj")
 
-[node name="Shadow" parent="." index="0"]
+[node name="ArrowDown" parent="." index="3"]
+position = Vector2(9, -72)
+
+[node name="Shadow" parent="." index="4"]
 scale = Vector2(4.9375, 1.4375)
 texture = ExtResource("2_bp6nk")
 
-[node name="Body" parent="." index="1"]
+[node name="Body" parent="." index="5"]
 position = Vector2(26, -50)
 texture = ExtResource("3_2aouj")
 hframes = 5
 vframes = 5
 
-[node name="MonsterPosition" parent="." index="2"]
-position = Vector2(0, -16)
-
-[node name="AnimationPlayer" parent="." index="3"]
+[node name="AnimationPlayer" parent="." index="6"]
 libraries = {
 &"": SubResource("AnimationLibrary_33pep")
 }

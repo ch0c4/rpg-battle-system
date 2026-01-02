@@ -1,19 +1,15 @@
-[gd_resource type="Resource" script_class="Fighter" load_steps=7 format=3 uid="uid://cpixm0qymoaj8"]
+[gd_resource type="Resource" script_class="Fighter" load_steps=6 format=3 uid="uid://cpixm0qymoaj8"]
 
 [ext_resource type="Script" uid="uid://co57ijainkf2b" path="res://Scripts/Resources/action.gd" id="1_fm6ci"]
 [ext_resource type="Script" uid="uid://c41kfduj2siwv" path="res://Scripts/Resources/fighter.gd" id="2_8n88i"]
 [ext_resource type="Resource" uid="uid://clg806iqjtok3" path="res://Entities/Monsters/Giant/Resource/giant_attack_action.tres" id="2_55f1j"]
 [ext_resource type="Resource" uid="uid://cegwks1i7gobs" path="res://Entities/Monsters/Giant/Resource/giant_lightning_action.tres" id="3_68svi"]
-[ext_resource type="Texture2D" uid="uid://bj8hm8uymnya6" path="res://Entities/Monsters/Giant/Assets/giant-spritesheet.png" id="5_rwov1"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_awmrr"]
-atlas = ExtResource("5_rwov1")
-region = Rect2(160, 160, 80, 80)
+[ext_resource type="Texture2D" uid="uid://bxxlkuederaiq" path="res://HUD/Menu/Assets/giant_faceset.tres" id="4_55f1j"]
 
 [resource]
 script = ExtResource("2_8n88i")
 name = "Giant"
-faceset = SubResource("AtlasTexture_awmrr")
+faceset = ExtResource("4_55f1j")
 player_type = 1
 min_attack = 12
 max_attack = 18

@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://dalv7eiqwywy3"]
+
+[ext_resource type="Texture2D" uid="uid://vgb5sxthsbly" path="res://HUD/Assets/arrow-right.png" id="1_wu3xy"]
+
+[node name="ItemElement" type="MarginContainer"]
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="TextureButton" type="TextureButton" parent="HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_wu3xy")
+stretch_mode = 3
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Potion"

@@ -1,0 +1,718 @@
+[gd_scene load_steps=20 format=3 uid="uid://dpprcyfknl7cn"]
+
+[ext_resource type="Script" uid="uid://d35clpcnhsjxi" path="res://HUD/Menu/start_menu.gd" id="1_8el1v"]
+[ext_resource type="Texture2D" uid="uid://vfj260cxykij" path="res://HUD/Menu/Assets/unselect_nine_path_panel.png" id="1_fu8oj"]
+[ext_resource type="Texture2D" uid="uid://b6uv6sehg02pm" path="res://HUD/Menu/Assets/brom-faceset.png" id="2_327dt"]
+[ext_resource type="Texture2D" uid="uid://28gs4rseqcvn" path="res://HUD/Menu/Assets/elowen-faceset.png" id="3_0dc0q"]
+[ext_resource type="Texture2D" uid="uid://biwfv3mjy0on4" path="res://HUD/Menu/Assets/liora-faceset.png" id="4_7moxu"]
+[ext_resource type="Texture2D" uid="uid://dmui43iyehfgq" path="res://HUD/Menu/Assets/nymor-faceset.png" id="5_slxu1"]
+[ext_resource type="Texture2D" uid="uid://brqkx3lbdl7ry" path="res://HUD/Menu/Assets/ragnar-faceset.png" id="6_i2v1m"]
+[ext_resource type="Texture2D" uid="uid://d0rc2t6ppwd7k" path="res://HUD/Menu/Assets/vaelis-faceset.png" id="7_6gosl"]
+[ext_resource type="Texture2D" uid="uid://bu0h0t3rfm74i" path="res://HUD/Menu/Assets/bat_faceset.tres" id="8_v7t5n"]
+[ext_resource type="Texture2D" uid="uid://cf3wiu71h2beg" path="res://HUD/Menu/Assets/boar_faceset.tres" id="9_8el1v"]
+[ext_resource type="Texture2D" uid="uid://c7ydttbs2teum" path="res://HUD/Menu/Assets/dino_faceset.tres" id="10_8sng0"]
+[ext_resource type="Texture2D" uid="uid://4mt1r201qquv" path="res://HUD/Menu/Assets/dragon_faceset.tres" id="11_ekqu7"]
+[ext_resource type="Texture2D" uid="uid://bj442d13u1ukp" path="res://HUD/Menu/Assets/ghost_faceset.tres" id="12_tse5w"]
+[ext_resource type="Texture2D" uid="uid://bxxlkuederaiq" path="res://HUD/Menu/Assets/giant_faceset.tres" id="13_wo5jl"]
+[ext_resource type="Texture2D" uid="uid://bxjrrt7oxojsm" path="res://HUD/Menu/Assets/mimic_faceset.tres" id="14_k15jk"]
+[ext_resource type="Texture2D" uid="uid://fcvw3316bib1" path="res://HUD/Menu/Assets/mushroom_faceset.tres" id="15_n3yuo"]
+[ext_resource type="Texture2D" uid="uid://1fl66x75cqlq" path="res://HUD/Menu/Assets/reptile_faceset.tres" id="16_x7l2c"]
+[ext_resource type="Texture2D" uid="uid://doviw3votw2lw" path="res://HUD/Menu/Assets/slime_faceset.tres" id="17_a13j7"]
+[ext_resource type="Texture2D" uid="uid://d4ndss65ntfai" path="res://HUD/Menu/Assets/snake_faceset.tres" id="18_ereqk"]
+
+[node name="StartMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_8el1v")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.15
+
+[node name="HeroList" type="GridContainer" parent="VBoxContainer"]
+layout_mode = 2
+columns = 6
+
+[node name="Brom" type="Button" parent="VBoxContainer/HeroList"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NinePatchRect" type="NinePatchRect" parent="VBoxContainer/HeroList/Brom"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_fu8oj")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="Brom" type="TextureRect" parent="VBoxContainer/HeroList/Brom/NinePatchRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.5
+offset_top = -47.0
+offset_right = 46.5
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_327dt")
+stretch_mode = 3
+
+[node name="Elowen" type="Button" parent="VBoxContainer/HeroList"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="VBoxContainer/HeroList/Elowen"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_fu8oj")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="Elown" type="TextureRect" parent="VBoxContainer/HeroList/Elowen/NinePatchRect2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.5
+offset_top = -47.0
+offset_right = 46.5
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_0dc0q")
+stretch_mode = 3
+
+[node name="Liora" type="Button" parent="VBoxContainer/HeroList"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NinePatchRect3" type="NinePatchRect" parent="VBoxContainer/HeroList/Liora"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_fu8oj")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/HeroList/Liora/NinePatchRect3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.5
+offset_top = -47.0
+offset_right = 46.5
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_7moxu")
+stretch_mode = 3
+
+[node name="Nymor" type="Button" parent="VBoxContainer/HeroList"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NinePatchRect4" type="NinePatchRect" parent="VBoxContainer/HeroList/Nymor"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_fu8oj")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/HeroList/Nymor/NinePatchRect4"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.5
+offset_top = -47.0
+offset_right = 46.5
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_slxu1")
+stretch_mode = 3
+
+[node name="Ragnar" type="Button" parent="VBoxContainer/HeroList"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NinePatchRect5" type="NinePatchRect" parent="VBoxContainer/HeroList/Ragnar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_fu8oj")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/HeroList/Ragnar/NinePatchRect5"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.5
+offset_top = -47.0
+offset_right = 46.5
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_i2v1m")
+stretch_mode = 3
+
+[node name="Vaelis" type="Button" parent="VBoxContainer/HeroList"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NinePatchRect6" type="NinePatchRect" parent="VBoxContainer/HeroList/Vaelis"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_fu8oj")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/HeroList/Vaelis/NinePatchRect6"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.5
+offset_top = -47.0
+offset_right = 46.5
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_6gosl")
+stretch_mode = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.3
+
+[node name="Start" type="Button" parent="VBoxContainer/MarginContainer"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Start"
+
+[node name="MonsterList" type="GridContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+columns = 6
+
+[node name="Bat" type="Button" parent="VBoxContainer/MonsterList"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NinePatchRect" type="NinePatchRect" parent="VBoxContainer/MonsterList/Bat"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_fu8oj")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/MonsterList/Bat/NinePatchRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.5
+offset_top = -47.0
+offset_right = 46.5
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_v7t5n")
+
+[node name="Boar" type="Button" parent="VBoxContainer/MonsterList"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="VBoxContainer/MonsterList/Boar"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_fu8oj")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/MonsterList/Boar/NinePatchRect2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.5
+offset_top = -47.0
+offset_right = 46.5
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_8el1v")
+
+[node name="Dino" type="Button" parent="VBoxContainer/MonsterList"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NinePatchRect3" type="NinePatchRect" parent="VBoxContainer/MonsterList/Dino"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_fu8oj")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/MonsterList/Dino/NinePatchRect3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.5
+offset_top = -47.0
+offset_right = 46.5
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_8sng0")
+
+[node name="Dragon" type="Button" parent="VBoxContainer/MonsterList"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NinePatchRect4" type="NinePatchRect" parent="VBoxContainer/MonsterList/Dragon"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_fu8oj")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/MonsterList/Dragon/NinePatchRect4"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.5
+offset_top = -47.0
+offset_right = 46.5
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_ekqu7")
+
+[node name="Ghost" type="Button" parent="VBoxContainer/MonsterList"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NinePatchRect5" type="NinePatchRect" parent="VBoxContainer/MonsterList/Ghost"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_fu8oj")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/MonsterList/Ghost/NinePatchRect5"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.5
+offset_top = -47.0
+offset_right = 46.5
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_tse5w")
+
+[node name="Giant" type="Button" parent="VBoxContainer/MonsterList"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NinePatchRect6" type="NinePatchRect" parent="VBoxContainer/MonsterList/Giant"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_fu8oj")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/MonsterList/Giant/NinePatchRect6"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.5
+offset_top = -47.0
+offset_right = 46.5
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_wo5jl")
+
+[node name="Mimic" type="Button" parent="VBoxContainer/MonsterList"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NinePatchRect7" type="NinePatchRect" parent="VBoxContainer/MonsterList/Mimic"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_fu8oj")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/MonsterList/Mimic/NinePatchRect7"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -63.5
+offset_top = -44.5
+offset_right = 63.5
+offset_bottom = 44.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_k15jk")
+stretch_mode = 3
+
+[node name="Mushroom" type="Button" parent="VBoxContainer/MonsterList"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NinePatchRect8" type="NinePatchRect" parent="VBoxContainer/MonsterList/Mushroom"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_fu8oj")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/MonsterList/Mushroom/NinePatchRect8"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.5
+offset_top = -47.0
+offset_right = 46.5
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("15_n3yuo")
+
+[node name="Reptile" type="Button" parent="VBoxContainer/MonsterList"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NinePatchRect9" type="NinePatchRect" parent="VBoxContainer/MonsterList/Reptile"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_fu8oj")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/MonsterList/Reptile/NinePatchRect9"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.5
+offset_top = -47.0
+offset_right = 46.5
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("16_x7l2c")
+
+[node name="Slime" type="Button" parent="VBoxContainer/MonsterList"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NinePatchRect10" type="NinePatchRect" parent="VBoxContainer/MonsterList/Slime"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_fu8oj")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/MonsterList/Slime/NinePatchRect10"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.5
+offset_top = -47.0
+offset_right = 46.5
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("17_a13j7")
+
+[node name="Snake" type="Button" parent="VBoxContainer/MonsterList"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NinePatchRect11" type="NinePatchRect" parent="VBoxContainer/MonsterList/Snake"]
+custom_minimum_size = Vector2(93, 105)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_fu8oj")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/MonsterList/Snake/NinePatchRect11"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.5
+offset_top = -47.0
+offset_right = 46.5
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("18_ereqk")
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.15
+
+[connection signal="pressed" from="VBoxContainer/HeroList/Brom" to="." method="_on_brom_pressed"]
+[connection signal="pressed" from="VBoxContainer/HeroList/Elowen" to="." method="_on_elowen_pressed"]
+[connection signal="pressed" from="VBoxContainer/HeroList/Liora" to="." method="_on_liora_pressed"]
+[connection signal="pressed" from="VBoxContainer/HeroList/Nymor" to="." method="_on_nymor_pressed"]
+[connection signal="pressed" from="VBoxContainer/HeroList/Ragnar" to="." method="_on_ragnar_pressed"]
+[connection signal="pressed" from="VBoxContainer/HeroList/Vaelis" to="." method="_on_vaelis_pressed"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/MonsterList/Bat" to="." method="_on_bat_pressed"]
+[connection signal="pressed" from="VBoxContainer/MonsterList/Boar" to="." method="_on_boar_pressed"]
+[connection signal="pressed" from="VBoxContainer/MonsterList/Dino" to="." method="_on_dino_pressed"]
+[connection signal="pressed" from="VBoxContainer/MonsterList/Dragon" to="." method="_on_dragon_pressed"]
+[connection signal="pressed" from="VBoxContainer/MonsterList/Ghost" to="." method="_on_ghost_pressed"]
+[connection signal="pressed" from="VBoxContainer/MonsterList/Giant" to="." method="_on_giant_pressed"]
+[connection signal="pressed" from="VBoxContainer/MonsterList/Mimic" to="." method="_on_mimic_pressed"]
+[connection signal="pressed" from="VBoxContainer/MonsterList/Mushroom" to="." method="_on_mushroom_pressed"]
+[connection signal="pressed" from="VBoxContainer/MonsterList/Reptile" to="." method="_on_reptile_pressed"]
+[connection signal="pressed" from="VBoxContainer/MonsterList/Slime" to="." method="_on_slime_pressed"]
+[connection signal="pressed" from="VBoxContainer/MonsterList/Snake" to="." method="_on_snake_pressed"]

@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://fcvw3316bib1"]
+
+[ext_resource type="Texture2D" uid="uid://d1sj6gak3ukag" path="res://Entities/Monsters/Mushroom/Assets/mushroom-spritesheet.png" id="1_7xqly"]
+
+[resource]
+atlas = ExtResource("1_7xqly")
+region = Rect2(52, 70, 91, 70)

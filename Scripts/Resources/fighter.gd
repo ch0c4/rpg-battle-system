@@ -13,3 +13,8 @@ class_name Fighter extends Resource
 @export var max_mana: int
 
 @export var actions: Array[Action]
+
+
+func get_initiative() -> int:
+	return (randi() % 6 + 1) + speed
+	

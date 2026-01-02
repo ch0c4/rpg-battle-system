@@ -101,20 +101,20 @@ _data = {
 [node name="Boar" instance=ExtResource("1_doctl")]
 info = ExtResource("2_bo7fc")
 
-[node name="Shadow" parent="." index="0"]
+[node name="ArrowDown" parent="." index="3"]
+position = Vector2(0, -144)
+
+[node name="Shadow" parent="." index="4"]
 scale = Vector2(8.875, 2.46875)
 texture = ExtResource("2_7jd68")
 
-[node name="Body" parent="." index="1"]
+[node name="Body" parent="." index="5"]
 position = Vector2(7, -80)
 texture = ExtResource("3_bo7fc")
 hframes = 6
 vframes = 6
 
-[node name="MonsterPosition" parent="." index="2"]
-position = Vector2(0, -40)
-
-[node name="AnimationPlayer" parent="." index="3"]
+[node name="AnimationPlayer" parent="." index="6"]
 libraries = {
 &"": SubResource("AnimationLibrary_7u58t")
 }
